@@ -43,7 +43,7 @@ const copy = {
     selectedIntro:
       "Four products, four different constraints. Each case shows the decisions, delivery evidence, and limits behind the result.",
     allWork: "View all work",
-    proof: "Evidence at a glance",
+    proof: "Selected proof of ownership",
     capabilities: "I work across the whole product path",
     capabilitiesIntro:
       "My engineering background is useful because I can turn product intent into an executable system, not because every product decision should become a technical one.",
@@ -143,7 +143,7 @@ const copy = {
     selectedIntro:
       "چهار محصول با چهار محدودیت متفاوت. در هر کیس، تصمیم ها، شواهد اجرا و مرز نتیجه روشن است.",
     allWork: "مشاهده همه پروژه ها",
-    proof: "چند شاهد در یک نگاه",
+    proof: "شواهد منتخب از مسئولیت کامل",
     capabilities: "در تمام مسیر محصول مشارکت می کنم",
     capabilitiesIntro:
       "دانش مهندسی کمک می کند منظور محصول را به سیستم قابل اجرا تبدیل کنم؛ نه اینکه هر تصمیم محصول را به تصمیم فنی تقلیل بدهم.",
@@ -351,10 +351,13 @@ export function HomePage({ locale }: { locale: Locale }) {
 
       <section className="proof-band" aria-label={c.proof}>
         <p className="kicker">{c.proof}</p>
-        <div><strong>~95%</strong><span>{rtl ? "کاهش هزینه LLM در Apex" : "lower LLM cost in Apex"}</span></div>
-        <div><strong>53 → 95</strong><span>{rtl ? "عملکرد موبایل First Choice" : "First Choice mobile performance"}</span></div>
-        <div><strong>1.4MB → 165kB</strong><span>{rtl ? "کاهش باندل Vibe" : "Vibe bundle reduction"}</span></div>
-        <div><strong>~40</strong><span>{rtl ? "کاربر MRM هنگام قطعی" : "MRM users during shutdown"}</span></div>
+        <div className="proof-grid">
+          <article><strong>{rtl ? "Apex را از ایده تا درآمد ساختم" : "Built Apex from thesis to revenue"}</strong><span>{rtl ? "استراتژی، الگوریتم، تجربه، مهندسی، قیمت گذاری و عملیات محصول فعال" : "Strategy, algorithms, UX, engineering, pricing, and production operations"}</span></article>
+          <article><strong>{rtl ? "بیش از ۳۰۰ عضو پرداخت کننده" : "300+ paying members"}</strong><span>{rtl ? "MonoCoin با جامعه بیش از ۱۳ هزار نفر، خودکارسازی و درآمد اشتراکی" : "MonoCoin, with a 13,000+ audience, automation, and subscription revenue"}</span></article>
+          <article><strong>{rtl ? "مالکیت Vibe از محصول تا اجرا" : "Owned Vibe from product to delivery"}</strong><span>{rtl ? "ایده، نقشه راه، تجربه کامل، فرانت اند از صفر، اعتماد، تست و آمادگی لانچ" : "Concept, roadmap, full UX, frontend from zero, trust, QA, and launch readiness"}</span></article>
+          <article><strong>{rtl ? "یک کسب و کار ۳۸ ساله را به محصول تبدیل کردم" : "Turned a 38-year operation into a product"}</strong><span>{rtl ? "First Choice در سه زبان، همراه با کشف، سرنخ، محتوا و پنل عملیات" : "First Choice across three languages, discovery, leads, content, and operations"}</span></article>
+          <article><strong>{rtl ? "کار یک تیم ۴۰ نفره را در قطعی ادامه دادم" : "Kept a 40-person team working through a shutdown"}</strong><span>{rtl ? "MRM را هنگام بحران تعریف، ساختم، مستقر کردم و به استفاده واقعی رساندم" : "Scoped, built, deployed, and drove real adoption of MRM during the crisis"}</span></article>
+        </div>
       </section>
 
       <section className="content-section selected-work">
