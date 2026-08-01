@@ -19,9 +19,11 @@ test("server-renders the English portfolio", async () => {
   const html = await response.text();
   assert.match(html, /Shahin Ghanizadeh/);
   assert.match(html, /Technical Product Manager/);
-  assert.match(html, /View selected work/);
+  assert.match(html, /Explore the case studies/);
   assert.match(html, /Apex/);
   assert.match(html, /Vibe/);
+  assert.match(html, /First Choice/);
+  assert.match(html, /MRM/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton/i);
 });
 
@@ -31,5 +33,16 @@ test("server-renders the Persian portfolio", async () => {
   const html = await response.text();
   assert.match(html, /شاهین/);
   assert.match(html, /مدیر فنی محصول/);
-  assert.match(html, /شواهد منتخب/);
+  assert.match(html, /پروژه های منتخب محصول/);
+  assert.match(html, /انتخاب اول/);
+});
+
+test("server-renders a deep case study", async () => {
+  const response = await render("/work/vibe");
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  assert.match(html, /The product brief/);
+  assert.match(html, /Decisions that changed the product/);
+  assert.match(html, /Evidence, not claims/);
+  assert.match(html, /Claim boundary/);
 });
