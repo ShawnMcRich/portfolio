@@ -32,7 +32,7 @@ const copy = {
     languageHref: "/fa",
     resume: "Download résumé",
     role: "Technical Product Manager · Product Designer · Senior Frontend Engineer",
-    intro: "I was doing product work long before I knew what to call it.",
+    intro: "My title was frontend engineer. Much of my work was already product management.",
     subintro:
       "I started in frontend. Then I became the person deciding what we should build, sketching the UX, ordering the work, sorting things out with backend, testing the awkward cases, and staying until release. I still work that way.",
     availability: "Open to remote product roles",
@@ -131,7 +131,7 @@ const copy = {
     languageHref: "/",
     resume: "دانلود رزومه",
     role: "مدیر فنی محصول · طراح محصول · توسعه‌دهنده ارشد فرانت‌اند",
-    intro: "سال‌ها بود کار محصول انجام می‌دادم، قبل از اینکه بدانم اسمش مدیریت محصول است.",
+    intro: "عنوانم توسعه‌دهنده فرانت‌اند بود، اما بخش بزرگی از کارم مدیریت محصول بود.",
     subintro:
       "از فرانت‌اند شروع کردم، اما خیلی زود درگیر تصمیم‌های قبل و بعد از کدنویسی شدم: چه چیزی بسازیم، تجربه کاربر چطور باشد، کدام کار زودتر انجام شود و محصول چطور به دست کاربر برسد. هنوز هم از ایده تا تست و انتشار کنار کار می‌مانم.",
     availability: "آماده همکاری ریموت با تیم‌های محصول",
