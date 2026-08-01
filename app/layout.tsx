@@ -9,7 +9,7 @@ const vazir = Vazirmatn({ variable: "--font-vazir", subsets: ["arabic"] });
 export const metadata: Metadata = {
   metadataBase: new URL("https://shahinghanizadeh.ir"),
   title: { default: "Shahin Ghanizadeh", template: "%s | Shahin Ghanizadeh" },
-  description: "Technical Product Manager and Senior Frontend Engineer.",
+  description: "Technical Product Manager and Senior Frontend Engineer who stays with the work from problem to release.",
   applicationName: "Shahin Ghanizadeh Portfolio",
   authors: [{ name: "Shahin Ghanizadeh" }],
   creator: "Shahin Ghanizadeh",
@@ -18,14 +18,14 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Shahin Ghanizadeh",
     title: "Shahin Ghanizadeh | Technical Product Manager",
-    description: "Product strategy, UX, technical delivery, and AI systems built end to end.",
+    description: "Products I have shaped, designed, built, tested, and taken into real use.",
     url: "https://shahinghanizadeh.ir",
     images: [{ url: "/og.png", width: 1200, height: 630, alt: "Shahin Ghanizadeh - Technical Product Manager" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Shahin Ghanizadeh | Technical Product Manager",
-    description: "Product strategy, UX, technical delivery, and AI systems built end to end.",
+    description: "Products I have shaped, designed, built, tested, and taken into real use.",
     images: ["/og.png"],
   },
 };

@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { HomePage } from "../site";
 
 export const metadata: Metadata = {
-  title: { absolute: "شاهین غنی زاده | مدیر فنی محصول" },
-  description: "مدیر فنی محصول و توسعه دهنده ارشد فرانت اند با تمرکز بر هوش مصنوعی، مارکت پلیس و محصولات داده محور.",
+  title: { absolute: "شاهین غنی‌زاده | مدیر فنی محصول" },
+  description: "از تعریف مسئله و طراحی تجربه تا مهندسی، QA و انتشار کنار محصول می‌مانم. مدیر فنی محصول و توسعه‌دهنده ارشد فرانت‌اند.",
   alternates: { canonical: "https://shahinghanizadeh.ir/fa", languages: { en: "https://shahinghanizadeh.ir", fa: "https://shahinghanizadeh.ir/fa" } },
 };
 export default function PersianHome() { return <HomePage locale="fa"/>; }

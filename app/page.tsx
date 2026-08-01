@@ -4,7 +4,7 @@ import { HomePage } from "./site";
 export const metadata: Metadata = {
   title: { absolute: "Shahin Ghanizadeh | Technical Product Manager" },
   description:
-    "Technical Product Manager and Senior Frontend Engineer building AI, marketplace, and operational products from strategy through delivery.",
+    "I build products from the first messy question through UX, engineering, QA, and release. Technical Product Manager and Senior Frontend Engineer.",
   alternates: {
     canonical: "https://shahinghanizadeh.ir",
     languages: { en: "https://shahinghanizadeh.ir", fa: "https://shahinghanizadeh.ir/fa" },

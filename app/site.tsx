@@ -31,44 +31,43 @@ const copy = {
     language: "FA",
     languageHref: "/fa",
     resume: "Download résumé",
-    role: "Technical Product Manager · AI Product · Senior Frontend Engineer",
-    intro:
-      "I find the real problem, shape the product, design the experience, and stay close enough to the code and operations to get it shipped.",
+    role: "Technical Product Manager · Product Designer · Senior Frontend Engineer",
+    intro: "I was doing product work long before I knew what to call it.",
     subintro:
-      "Ten years across software, founder-led products, AI systems, marketplaces, frontend engineering, and the practical work between an idea and a reliable release.",
-    availability: "Open to remote and international product roles",
-    workCta: "Explore the case studies",
-    contactCta: "Start a conversation",
-    selectedWork: "Selected product work",
+      "I started in frontend. Then I became the person deciding what we should build, sketching the UX, ordering the work, sorting things out with backend, testing the awkward cases, and staying until release. I still work that way.",
+    availability: "Open to remote product roles",
+    workCta: "See what I built",
+    contactCta: "Email me",
+    selectedWork: "A few things I built",
     selectedIntro:
-      "Four products, four different constraints. Each case shows the decisions, delivery evidence, and limits behind the result.",
+      "These are the projects I can discuss properly: what was messy at the start, what I decided, what I built myself, and where the product stands now.",
     allWork: "View all work",
-    proof: "Selected proof of ownership",
-    capabilities: "I work across the whole product path",
+    proof: "The short version",
+    capabilities: "I do not hand over the idea and disappear",
     capabilitiesIntro:
-      "My engineering background is useful because I can turn product intent into an executable system, not because every product decision should become a technical one.",
+      "I am at my best when product, design, and engineering need to think together. I can make the call, draw the flow, explain it to the team, and understand what the implementation will cost.",
     capabilityItems: [
-      ["Frame", "Find the user, business, and operational problem worth solving."],
-      ["Sequence", "Set the product layers, dependencies, measures, and trade-offs."],
-      ["Make visible", "Turn vague ideas into UX, flows, prototypes, and clear requirements."],
-      ["Deliver", "Coordinate frontend, backend, QA, risk, and release work."],
-      ["Learn", "Instrument, observe, fix, and revise the product after reality answers back."],
+      ["Understand it", "Talk to people, inspect the business, and find the problem underneath the requested feature."],
+      ["Choose", "Decide what belongs in the core, what depends on it, and what can wait."],
+      ["Draw it", "Use flows and working UI to make the idea concrete before the team commits to it."],
+      ["Build it", "Stay close to frontend, backend, QA, risk, and release instead of managing from a distance."],
+      ["Correct it", "Watch what happens, trace the failures, and change the product when reality disagrees."],
     ],
     path: "Experience path",
     pathIntro:
-      "My career overlaps because I have built founder-led products alongside client and engineering work. The common thread is ownership from ambiguity to delivery.",
-    fullHistory: "Read the full background",
-    notes: "Field notes",
+      "Some of these dates overlap because I was building my own products while running a company and doing client work. That is the honest version of the timeline.",
+    fullHistory: "See the full timeline",
+    notes: "Things I have learned the expensive way",
     notesIntro:
-      "Product thinking written from systems I have actually built, priced, debugged, and operated.",
+      "Short notes from products I have built, priced, broken, fixed, and kept running.",
     readNote: "Read note",
-    contactTitle: "Need product judgment that survives contact with delivery?",
+    contactTitle: "Have a product problem that needs both judgment and delivery?",
     contactBody:
       "I am exploring technical product management, AI product, product ownership, and product-minded frontend leadership roles.",
-    workTitle: "The work, with the decisions left in.",
+    workTitle: "The work, including the parts that did not fit neatly.",
     workIntro:
-      "These are not launch screenshots with a success paragraph attached. The case studies show the problem, constraints, sequencing, technical system, evidence, outcome, and what remains unproven.",
-    viewCase: "Read full case study",
+      "Each case explains why the product existed, what I personally took responsibility for, the decisions that mattered, and what is still too early to call a success.",
+    viewCase: "Open the project",
     caseNav: [
       ["Brief", "brief"],
       ["Constraints", "constraints"],
@@ -86,15 +85,15 @@ const copy = {
       context: "Context",
       problem: "Product problem",
       users: "Who it serves",
-      northStar: "Success direction",
-      constraints: "The constraints",
-      journey: "How the product took shape",
-      decisions: "Decisions that changed the product",
+      northStar: "What good looked like",
+      constraints: "What made it difficult",
+      journey: "What I built first, and why",
+      decisions: "The calls I had to make",
       system: "How the system works",
       scope: "What I personally owned",
-      evidence: "Evidence, not claims",
-      gallery: "Product evidence",
-      outcome: "Outcome and honest boundary",
+      evidence: "What you can inspect",
+      gallery: "Inside the product",
+      outcome: "Where it stands today",
       lessons: "What I learned",
       next: "Next case study",
       live: "Live",
@@ -102,13 +101,13 @@ const copy = {
       designed: "Designed / specified",
       artifact: "Evidence",
     },
-    thinkingTitle: "Working notes, not content marketing.",
+    thinkingTitle: "Notes from products I have actually had to make work.",
     thinkingIntro:
       "Three ideas I can defend with product decisions, code, operating constraints, and outcomes.",
-    aboutTitle: "A product person who learned the job by carrying the work.",
+    aboutTitle: "Frontend was where I started. It was never where the work stopped.",
     aboutBody: [
       "I started in frontend engineering and UX, but the work never stayed inside the frontend. I was usually the person asking what should be built, drawing the flow, deciding what had to come first, translating it for frontend and backend, testing the result, and noticing operational or legal risk before release.",
-      "Over time I built companies and products of my own. That added pricing, customer conversations, support, infrastructure, launch decisions, and the uncomfortable discipline of being responsible when an idea meets reality. Today I call that work technical product management, and I still value the engineering depth that lets me understand the cost of a decision.",
+      "Later I built products and a company of my own. That meant pricing, customer conversations, support, infrastructure, launch decisions, and being the person responsible when something went wrong. Today I call the job technical product management. I still write code because it keeps my decisions honest.",
     ],
     principles: "How I tend to work",
     principleItems: [
@@ -131,51 +130,50 @@ const copy = {
     language: "EN",
     languageHref: "/",
     resume: "دانلود رزومه",
-    role: "مدیر فنی محصول · محصول هوش مصنوعی · توسعه دهنده ارشد فرانت اند",
-    intro:
-      "مسئله واقعی را پیدا می کنم، محصول و تجربه را شکل می دهم و آن قدر به اجرا، کد و عملیات نزدیک می مانم تا نتیجه واقعا منتشر شود.",
+    role: "مدیر فنی محصول · طراح محصول · توسعه‌دهنده ارشد فرانت‌اند",
+    intro: "سال‌ها کار مدیریت محصول می‌کردم، قبل از اینکه اسمش را بدانم.",
     subintro:
-      "ده سال تجربه در نرم افزار، محصولات بنیان گذارمحور، سیستم های هوش مصنوعی، مارکت پلیس، فرانت اند و تمام کارهای میان یک ایده و انتشار قابل اتکا.",
-    availability: "آماده همکاری ریموت و بین المللی در حوزه محصول",
-    workCta: "مشاهده کیس استادی ها",
-    contactCta: "شروع گفت وگو",
-    selectedWork: "پروژه های منتخب محصول",
+      "کارم را از فرانت‌اند شروع کردم، اما خیلی زود درگیر این شدم که اصلاً چه چیزی باید ساخته شود، تجربه کاربر چطور باشد، کدام کار زودتر انجام شود و تیم فنی چطور آن را به محصول واقعی تبدیل کند. هنوز هم از ایده تا تست و انتشار کنار محصول می‌مانم.",
+    availability: "آماده همکاری ریموت با تیم‌های محصول",
+    workCta: "دیدن پروژه‌ها",
+    contactCta: "ارسال ایمیل",
+    selectedWork: "چند محصولی که ساخته‌ام",
     selectedIntro:
-      "چهار محصول با چهار محدودیت متفاوت. در هر کیس، تصمیم ها، شواهد اجرا و مرز نتیجه روشن است.",
+      "اینجا می‌توانم بدون کلی‌گویی درباره پروژه‌ها حرف بزنم؛ اینکه مسئله از کجا شروع شد، چه تصمیمی گرفتم، کدام بخش را خودم ساختم و امروز محصول کجاست.",
     allWork: "مشاهده همه پروژه ها",
-    proof: "شواهد منتخب از مسئولیت کامل",
-    capabilities: "در تمام مسیر محصول مشارکت می کنم",
+    proof: "خلاصه ماجرا",
+    capabilities: "ایده را تحویل نمی‌دهم و کنار نمی‌روم",
     capabilitiesIntro:
-      "دانش مهندسی کمک می کند منظور محصول را به سیستم قابل اجرا تبدیل کنم؛ نه اینکه هر تصمیم محصول را به تصمیم فنی تقلیل بدهم.",
+      "بهترین کارم زمانی شکل می‌گیرد که محصول، طراحی و مهندسی باید با هم فکر کنند. می‌توانم تصمیم بگیرم، مسیر را طراحی کنم، آن را برای تیم روشن کنم و هزینه فنی‌اش را هم بفهمم.",
     capabilityItems: [
-      ["تعریف", "پیدا کردن مسئله مهم کاربر، کسب و کار و عملیات."],
-      ["چیدمان", "تعیین لایه ها، وابستگی ها، معیارها و بده بستان های محصول."],
-      ["قابل مشاهده کردن", "تبدیل ایده مبهم به تجربه، جریان، نمونه و نیازمندی روشن."],
-      ["اجرا", "هماهنگی فرانت اند، بک اند، تست، ریسک و انتشار."],
-      ["یادگیری", "اندازه گیری، مشاهده، رفع مشکل و اصلاح محصول بعد از مواجهه با واقعیت."],
+      ["فهم مسئله", "با کاربر حرف می‌زنم، کسب‌وکار را می‌شناسم و مسئله پشت درخواست اولیه را پیدا می‌کنم."],
+      ["انتخاب", "مشخص می‌کنم چه چیزی هسته محصول است، چه چیز به آن وابسته است و چه کاری می‌تواند صبر کند."],
+      ["قابل دیدن کردن", "با طراحی مسیر و رابط واقعی، ایده را قبل از شروع هزینه اصلی برای همه روشن می‌کنم."],
+      ["ساختن", "از فرانت‌اند، بک‌اند و تست فاصله نمی‌گیرم و تا انتشار کنار تیم می‌مانم."],
+      ["اصلاح", "رفتار واقعی محصول را می‌بینم، خطاها را پیدا می‌کنم و وقتی واقعیت با فرض ما فرق دارد، مسیر را عوض می‌کنم."],
     ],
     path: "مسیر تجربه",
     pathIntro:
-      "بخشی از سابقه من هم پوشانی دارد، چون هم زمان با کار مهندسی و پروژه های مشتری، محصولات خودم را هم ساخته ام. خط مشترک همه آن ها، مسئولیت از ابهام تا تحویل است.",
-    fullHistory: "مشاهده سابقه کامل",
-    notes: "یادداشت های کاری",
+      "بعضی تاریخ‌ها با هم هم‌پوشانی دارند، چون هم‌زمان با اداره شرکت و انجام پروژه‌های مشتری، محصولات خودم را هم می‌ساختم. این روایت واقعی مسیر کاری من است.",
+    fullHistory: "دیدن سابقه کامل",
+    notes: "چیزهایی که با هزینه واقعی یاد گرفته‌ام",
     notesIntro:
-      "دیدگاه محصول از سیستم هایی که واقعا ساخته، قیمت گذاری، رفع اشکال و مدیریت کرده ام.",
+      "یادداشت‌های کوتاه از محصولاتی که ساخته‌ام، برایشان قیمت گذاشته‌ام، خرابشان کرده‌ام، درستشان کرده‌ام و زنده نگه داشته‌ام.",
     readNote: "مطالعه یادداشت",
-    contactTitle: "به قضاوت محصولی نیاز دارید که در اجرا هم دوام بیاورد؟",
+    contactTitle: "مسئله محصولی دارید که هم تصمیم می‌خواهد و هم اجرا؟",
     contactBody:
-      "برای موقعیت های مدیریت فنی محصول، محصول هوش مصنوعی، مالکیت محصول و رهبری فرانت اند با نگاه محصول آماده همکاری هستم.",
-    workTitle: "پروژه ها، همراه با تصمیم های پشت آن ها.",
+      "برای موقعیت‌های مدیریت فنی محصول، محصول هوش مصنوعی، مالکیت محصول و رهبری فرانت‌اند با نگاه محصول آماده همکاری هستم.",
+    workTitle: "پروژه‌ها، با همان بخش‌هایی که همیشه مرتب و تمیز پیش نرفتند.",
     workIntro:
-      "این ها چند تصویر لانچ همراه با یک پاراگراف موفقیت نیستند. هر کیس، مسئله، محدودیت، چیدمان، سیستم فنی، شواهد، نتیجه و بخش های اثبات نشده را نشان می دهد.",
-    viewCase: "مطالعه کامل کیس استادی",
+      "در هر پروژه توضیح داده‌ام چرا محصول ساخته شد، خودم دقیقاً مسئول چه بودم، کدام تصمیم‌ها مهم بودند و برای قضاوت درباره کدام نتیجه هنوز زود است.",
+    viewCase: "دیدن جزئیات پروژه",
     caseNav: [
       ["خلاصه", "brief"],
       ["محدودیت", "constraints"],
       ["مسیر", "journey"],
       ["تصمیم ها", "decisions"],
       ["سیستم", "system"],
-      ["شواهد", "evidence"],
+      ["جزئیات قابل بررسی", "evidence"],
       ["نتیجه", "outcome"],
     ],
     labels: {
@@ -186,29 +184,29 @@ const copy = {
       context: "زمینه",
       problem: "مسئله محصول",
       users: "مخاطب",
-      northStar: "جهت موفقیت",
-      constraints: "محدودیت ها",
-      journey: "مسیر شکل گیری محصول",
-      decisions: "تصمیم هایی که محصول را تغییر دادند",
-      system: "سیستم چگونه کار می کند",
+      northStar: "نتیجه‌ای که دنبالش بودم",
+      constraints: "چه چیزی کار را سخت می‌کرد",
+      journey: "اول چه چیزی را ساختم و چرا",
+      decisions: "تصمیم‌های اصلی من",
+      system: "سیستم چطور کار می‌کند",
       scope: "مسئولیت مستقیم من",
-      evidence: "شواهد به جای ادعا",
-      gallery: "شواهد محصول",
-      outcome: "نتیجه و مرز صادقانه",
+      evidence: "چیزهایی که می‌شود بررسی کرد",
+      gallery: "داخل محصول",
+      outcome: "امروز پروژه کجاست",
       lessons: "آموخته ها",
-      next: "کیس استادی بعدی",
+      next: "پروژه بعدی",
       live: "فعال",
       shipped: "اجراشده",
       designed: "طراحی و مشخص شده",
       artifact: "شاهد",
     },
-    thinkingTitle: "یادداشت کاری، نه بازاریابی محتوا.",
+    thinkingTitle: "یادداشت‌هایی از محصولاتی که واقعاً باید کار می‌کردند.",
     thinkingIntro:
       "سه دیدگاه که می توانم با تصمیم محصول، کد، محدودیت عملیاتی و نتیجه از آن ها دفاع کنم.",
-    aboutTitle: "کسی که مدیریت محصول را با به دوش کشیدن خود کار یاد گرفت.",
+    aboutTitle: "کارم از فرانت‌اند شروع شد، اما هیچ‌وقت همان‌جا متوقف نماند.",
     aboutBody: [
-      "کارم را از توسعه فرانت اند و تجربه کاربری شروع کردم، اما مسئولیت هیچ وقت در فرانت اند نماند. معمولا کسی بودم که می پرسید چه چیزی باید ساخته شود، جریان را طراحی می کرد، ترتیب کار را مشخص می کرد، آن را برای فرانت اند و بک اند قابل اجرا می ساخت، نتیجه را تست می کرد و پیش از انتشار به ریسک عملیاتی یا حقوقی توجه داشت.",
-      "بعدتر شرکت و محصولات خودم را ساختم. قیمت گذاری، گفت وگو با کاربر، پشتیبانی، زیرساخت، تصمیم های لانچ و مسئولیت نتیجه هم به کار اضافه شد. امروز نام این مسیر را مدیریت فنی محصول می گذارم و همچنان عمق مهندسی را مهم می دانم، چون کمک می کند هزینه واقعی هر تصمیم را بفهمم.",
+      "کارم را از فرانت‌اند و طراحی تجربه کاربر شروع کردم، اما مسئولیتم هیچ‌وقت همان‌جا تمام نشد. معمولاً من بودم که می‌پرسیدم چه چیزی باید ساخته شود، مسیر را طراحی می‌کردم، ترتیب کار را مشخص می‌کردم، با فرانت‌اند و بک‌اند به راه‌حل می‌رسیدم، نتیجه را تست می‌کردم و قبل از انتشار حواسم به ریسک عملیاتی یا حقوقی هم بود.",
+      "بعدتر شرکت و محصولات خودم را ساختم. آنجا دیگر قیمت‌گذاری، حرف زدن با مشتری، پشتیبانی، زیرساخت، تصمیم‌های لانچ و جواب دادن بابت نتیجه هم بر عهده خودم بود. امروز اسم این کار را مدیریت فنی محصول می‌گذارم. هنوز هم کد می‌زنم، چون کمک می‌کند تصمیم‌هایم از واقعیت فنی جدا نشوند.",
     ],
     principles: "روش کاری من",
     principleItems: [
@@ -245,9 +243,9 @@ export function Header({ locale }: { locale: Locale }) {
   const c = copy[locale];
   return (
     <header className="site-header">
-      <Link className="brand" href={href(locale)} aria-label={locale === "fa" ? "صفحه اصلی شاهین غنی زاده" : "Shahin Ghanizadeh home"}>
+      <Link className="brand" href={href(locale)} aria-label={locale === "fa" ? "صفحه اصلی شاهین غنی‌زاده" : "Shahin Ghanizadeh home"}>
         <span>SG</span>
-        <strong>{locale === "fa" ? "شاهین غنی زاده" : "Shahin Ghanizadeh"}</strong>
+        <strong>{locale === "fa" ? "شاهین غنی‌زاده" : "Shahin Ghanizadeh"}</strong>
       </Link>
       <nav className="desktop-nav" aria-label={locale === "fa" ? "ناوبری اصلی" : "Primary navigation"}>
         {c.nav.map(([label, path]) => <Link key={path} href={href(locale, path)}>{label}</Link>)}
@@ -269,7 +267,7 @@ export function Header({ locale }: { locale: Locale }) {
 export function Footer({ locale }: { locale: Locale }) {
   return (
     <footer className="footer">
-      <div><strong>{locale === "fa" ? "شاهین غنی زاده" : "Shahin Ghanizadeh"}</strong><p>{locale === "fa" ? "مدیر فنی محصول و سازنده محصول" : "Technical product manager and product builder"}</p></div>
+      <div><strong>{locale === "fa" ? "شاهین غنی‌زاده" : "Shahin Ghanizadeh"}</strong><p>{locale === "fa" ? "مدیر فنی محصول و سازنده محصول" : "Technical product manager and product builder"}</p></div>
       <div className="footer-links">
         <a href="mailto:shahinghani@hotmail.com">Email</a>
         <a href="https://www.linkedin.com/in/shahinghanizadeh" target="_blank" rel="noreferrer">LinkedIn</a>
@@ -331,7 +329,7 @@ export function HomePage({ locale }: { locale: Locale }) {
       <section className="hero">
         <div className="hero-copy">
           <p className="kicker">{c.role}</p>
-          <h1>{rtl ? "شاهین غنی زاده" : "Shahin Ghanizadeh"}</h1>
+          <h1>{rtl ? "شاهین غنی‌زاده" : "Shahin Ghanizadeh"}</h1>
           <p className="hero-statement">{c.intro}</p>
           <p className="hero-support">{c.subintro}</p>
           <div className="actions">
@@ -339,25 +337,23 @@ export function HomePage({ locale }: { locale: Locale }) {
             <a className="button button-plain" href="mailto:shahinghani@hotmail.com">{c.contactCta}</a>
           </div>
         </div>
-        <aside className="hero-aside">
+        <aside className="hero-note">
           <div className="availability"><span />{c.availability}</div>
-          <dl>
-            <div><dt>{rtl ? "محصول" : "Products"}</dt><dd>{rtl ? "هوش مصنوعی · مارکت پلیس · عملیات" : "AI · Marketplaces · Operations"}</dd></div>
-            <div><dt>{rtl ? "عمق" : "Depth"}</dt><dd>{rtl ? "استراتژی · تجربه کاربری · مهندسی · تست" : "Strategy · UX · Engineering · QA"}</dd></div>
-            <div><dt>{rtl ? "همکاری" : "Working"}</dt><dd>{rtl ? "تهران · ریموت" : "Tehran · Remote"}</dd></div>
-          </dl>
+          <p>{rtl
+            ? "این روزها Apex را به‌عنوان یک محصول زنده و درآمدزا اداره می‌کنم و هم‌زمان محصول، طراحی و فرانت‌اند Vibe را تا لانچ جلو می‌برم."
+            : "Right now I run Apex as a live, paid product while leading Vibe's product, design, and frontend toward launch."}</p>
         </aside>
       </section>
 
-      <section className="proof-band" aria-label={c.proof}>
-        <p className="kicker">{c.proof}</p>
-        <div className="proof-grid">
-          <article><strong>{rtl ? "Apex را از ایده تا درآمد ساختم" : "Built Apex from thesis to revenue"}</strong><span>{rtl ? "استراتژی، الگوریتم، تجربه، مهندسی، قیمت گذاری و عملیات محصول فعال" : "Strategy, algorithms, UX, engineering, pricing, and production operations"}</span></article>
-          <article><strong>{rtl ? "بیش از ۳۰۰ عضو پرداخت کننده" : "300+ paying members"}</strong><span>{rtl ? "MonoCoin با جامعه بیش از ۱۳ هزار نفر، خودکارسازی و درآمد اشتراکی" : "MonoCoin, with a 13,000+ audience, automation, and subscription revenue"}</span></article>
-          <article><strong>{rtl ? "مالکیت Vibe از محصول تا اجرا" : "Owned Vibe from product to delivery"}</strong><span>{rtl ? "ایده، نقشه راه، تجربه کامل، فرانت اند از صفر، اعتماد، تست و آمادگی لانچ" : "Concept, roadmap, full UX, frontend from zero, trust, QA, and launch readiness"}</span></article>
-          <article><strong>{rtl ? "یک کسب و کار ۳۸ ساله را به محصول تبدیل کردم" : "Turned a 38-year operation into a product"}</strong><span>{rtl ? "First Choice در سه زبان، همراه با کشف، سرنخ، محتوا و پنل عملیات" : "First Choice across three languages, discovery, leads, content, and operations"}</span></article>
-          <article><strong>{rtl ? "کار یک تیم ۴۰ نفره را در قطعی ادامه دادم" : "Kept a 40-person team working through a shutdown"}</strong><span>{rtl ? "MRM را هنگام بحران تعریف، ساختم، مستقر کردم و به استفاده واقعی رساندم" : "Scoped, built, deployed, and drove real adoption of MRM during the crisis"}</span></article>
-        </div>
+      <section className="work-window" aria-label={rtl ? "تصویری از محصولات" : "A look inside the products"}>
+        <figure className="work-window-main">
+          <img src="/projects/apex/new/app-dashboard.jpg" alt={rtl ? "داشبورد محصول Apex" : "Apex product dashboard"} />
+          <figcaption><span>Apex</span>{rtl ? "از منطق بازار تا محصول درآمدزا" : "From market logic to a paid product"}</figcaption>
+        </figure>
+        <figure>
+          <img src="/projects/vibe/new/discovery-home.jpg" alt={rtl ? "صفحه کشف Vibe" : "Vibe discovery experience"} />
+          <figcaption><span>Vibe</span>{rtl ? "محصول، طراحی و فرانت‌اند از صفر" : "Product, design, and frontend from zero"}</figcaption>
+        </figure>
       </section>
 
       <section className="content-section selected-work">
@@ -458,7 +454,7 @@ export function CaseStudyPage({ locale, slug }: { locale: Locale; slug: ProjectS
         <div className="case-layout">
           <aside className="case-toc"><p className="kicker">{rtl ? "در این کیس" : "In this case"}</p>{c.caseNav.map(([label, id]) => <a key={id} href={`#${id}`}>{label}</a>)}</aside>
           <div className="case-content">
-            <CaseSection id="brief" index="01" title={rtl ? "تعریف محصول" : "The product brief"}>
+            <CaseSection id="brief" index="01" title={rtl ? "این محصول چرا ساخته شد" : "Why this product exists"}>
               <div className="brief-grid">
                 <article><p className="kicker">{l.context}</p><p>{local(p.context, locale)}</p></article>
                 <article><p className="kicker">{l.problem}</p><p>{local(p.problem, locale)}</p></article>
@@ -476,7 +472,7 @@ export function CaseStudyPage({ locale, slug }: { locale: Locale; slug: ProjectS
             </CaseSection>
 
             <CaseSection id="decisions" index="04" title={l.decisions}>
-              <div className="decision-list">{p.decisions.map((decision, index) => <article key={local(decision.title, locale)}><div><span>Decision {String(index + 1).padStart(2, "0")}</span><Status status={decision.status} locale={locale} /></div><h3>{local(decision.title, locale)}</h3><p>{local(decision.body, locale)}</p></article>)}</div>
+              <div className="decision-list">{p.decisions.map((decision, index) => <article key={local(decision.title, locale)}><div><span>{rtl ? `تصمیم ${index + 1}` : `Decision ${String(index + 1).padStart(2, "0")}`}</span><Status status={decision.status} locale={locale} /></div><h3>{local(decision.title, locale)}</h3><p>{local(decision.body, locale)}</p></article>)}</div>
             </CaseSection>
 
             <CaseSection id="system" index="05" title={l.system}>
@@ -490,7 +486,7 @@ export function CaseStudyPage({ locale, slug }: { locale: Locale; slug: ProjectS
             </CaseSection>
 
             <CaseSection id="outcome" index="07" title={l.outcome}>
-              <div className="outcome-block"><p>{local(p.outcome, locale)}</p><aside><strong>{rtl ? "مرز ادعا" : "Claim boundary"}</strong><p>{local(p.statusNote, locale)}</p></aside></div>
+              <div className="outcome-block"><p>{local(p.outcome, locale)}</p><aside><strong>{rtl ? "چیزی که ادعا نمی‌کنم" : "What I am not claiming"}</strong><p>{local(p.statusNote, locale)}</p></aside></div>
               <div className="lessons"><p className="kicker">{l.lessons}</p><ol>{p.lessons.map((lesson, index) => <li key={local(lesson, locale)}><span>0{index + 1}</span><p>{local(lesson, locale)}</p></li>)}</ol></div>
             </CaseSection>
           </div>
@@ -511,7 +507,7 @@ export function ThinkingPage({ locale }: { locale: Locale }) {
       <Header locale={locale} />
       <section className="page-hero thinking-hero"><p className="kicker">{rtl ? "تفکر محصول" : "Product thinking"}</p><h1>{c.thinkingTitle}</h1><p>{c.thinkingIntro}</p></section>
       <section className="essay-index">{notes.map((note, index) => <a key={note.slug} href={`#${note.slug}`}><span>0{index + 1}</span><strong>{local(note.title, locale)}</strong></a>)}</section>
-      <section className="essays">{notes.map((note, index) => <article id={note.slug} key={note.slug}><header><span>0{index + 1}</span><div><h2>{local(note.title, locale)}</h2><p>{local(note.lead, locale)}</p></div></header><div>{note.paragraphs.map(paragraph => <p key={local(paragraph, locale)}>{local(paragraph, locale)}</p>)}</div><Link className="text-link" href={href(locale, `work/${index === 0 ? "apex" : "vibe"}`)}>{rtl ? "مشاهده شواهد پروژه" : "See the project evidence"}<Arrow locale={locale} /></Link></article>)}</section>
+      <section className="essays">{notes.map((note, index) => <article id={note.slug} key={note.slug}><header><span>0{index + 1}</span><div><h2>{local(note.title, locale)}</h2><p>{local(note.lead, locale)}</p></div></header><div>{note.paragraphs.map(paragraph => <p key={local(paragraph, locale)}>{local(paragraph, locale)}</p>)}</div><Link className="text-link" href={href(locale, `work/${index === 0 ? "apex" : "vibe"}`)}>{rtl ? "دیدن جزئیات پروژه" : "See the project details"}<Arrow locale={locale} /></Link></article>)}</section>
       <Contact locale={locale} />
       <Footer locale={locale} />
     </main>
