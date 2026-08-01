@@ -7,7 +7,7 @@
   --muted: #66645f;
   --line: #d9d8d2;
   --soft: #ecebe6;
-  --yellow: #f0e85c;
+  --hero: #eef1ef;
   --green: #167552;
   --blue: #3158d4;
   --red: #d94832;
@@ -62,7 +62,7 @@ button, input, textarea, select { font: inherit; }
 .text-link { display: inline-flex; align-items: center; gap: 8px; width: fit-content; padding-bottom: 5px; border-bottom: 1px solid currentColor; font-size: 14px; font-weight: 680; }
 .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 34px; }
 
-.hero { min-height: 670px; margin: 0; padding: 94px max(22px, calc((100vw - var(--max)) / 2)) 72px; display: grid; grid-template-columns: minmax(0, 1fr) 330px; gap: 90px; align-items: end; background: var(--yellow); }
+.hero { min-height: 670px; margin: 0; padding: 94px max(22px, calc((100vw - var(--max)) / 2)) 72px; display: grid; grid-template-columns: minmax(0, 1fr) 330px; gap: 90px; align-items: end; background: var(--hero); border-bottom: 1px solid var(--line); }
 .hero-copy { max-width: 910px; }
 .hero h1 { margin: 18px 0 36px; font-size: 86px; line-height: .94; letter-spacing: 0; font-weight: 610; }
 .rtl .hero h1 { font-size: 74px; line-height: 1.3; }
