@@ -4,11 +4,13 @@ export type ProjectSlug = "apex" | "vibe" | "mrm" | "first-choice";
 export const projects = {
   apex: {
     accent: "green",
-    cover: "/projects/apex/hero-devices.jpg",
+    cover: "/projects/apex/new/app-dashboard.jpg",
     images: [
-      { src: "/projects/apex/analysis-output.png", en: "Structured analysis output", fa: "خروجی ساختاریافته تحلیل" },
-      { src: "/projects/apex/analysis-builder.png", en: "Analysis builder", fa: "ابزار ساخت تحلیل" },
-      { src: "/projects/apex/panic-button-optimized.jpg", en: "Panic Button flow", fa: "فرایند دکمه پنیک" },
+      { src: "/projects/apex/new/marketing-home.jpg", en: "Public positioning and live market read", fa: "معرفی محصول و تحلیل زنده بازار" },
+      { src: "/projects/apex/new/analysis-builder.jpg", en: "Market, timeframe, and analysis-mode configuration", fa: "انتخاب بازار، بازه زمانی و نوع تحلیل" },
+      { src: "/projects/apex/new/analysis-history.jpg", en: "Analysis history with confidence and market context", fa: "تاریخچه تحلیل ها همراه با اطمینان و شرایط بازار" },
+      { src: "/projects/apex/new/credit-model.jpg", en: "Prepaid credit model and transparent usage costs", fa: "مدل اعتباری و هزینه شفاف استفاده" },
+      { src: "/projects/apex/new/command-palette.jpg", en: "Command palette for urgent actions", fa: "دسترسی سریع به عملیات مهم" },
     ],
     en: {
       title: "Apex",
@@ -49,12 +51,13 @@ export const projects = {
   },
   vibe: {
     accent: "blue",
-    cover: "/projects/vibe/business-profile.png",
+    cover: "/projects/vibe/new/business-dashboard.jpg",
     images: [
-      { src: "/projects/vibe/business-profile.png", en: "Business profile and review summary", fa: "پروفایل کسب و کار و خلاصه نظرات" },
-      { src: "/projects/vibe/ai-review-quality.png", en: "Explainable rating suggestion", fa: "پیشنهاد توضیح پذیر امتیاز" },
-      { src: "/projects/vibe/identity-verification.png", en: "Optional identity verification", fa: "احراز هویت اختیاری" },
-      { src: "/projects/vibe/admin-moderation.png", en: "Unified moderation queue", fa: "صف یکپارچه رسیدگی" },
+      { src: "/projects/vibe/new/discovery-home.jpg", en: "Discovery experience built around the reviewer, not only the score", fa: "تجربه کشف بر اساس نویسنده نظر، نه فقط امتیاز" },
+      { src: "/projects/vibe/new/ai-review-system.jpg", en: "AI-assisted review quality with the final decision left to the user", fa: "کنترل کیفیت نظر با هوش مصنوعی و تصمیم نهایی کاربر" },
+      { src: "/projects/vibe/new/identity-verification.jpg", en: "Optional identity verification and its product rationale", fa: "احراز هویت اختیاری و توضیح روشن دلیل آن" },
+      { src: "/projects/vibe/new/review-transparency.jpg", en: "Reviewer history, verification, and business replies", fa: "سابقه نویسنده، احراز هویت و پاسخ کسب و کار" },
+      { src: "/projects/vibe/new/trust-layers.jpg", en: "The three-layer trust model", fa: "مدل سه لایه اعتماد" },
     ],
     en: {
       title: "Vibe",

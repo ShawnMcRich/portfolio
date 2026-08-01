@@ -31,5 +31,5 @@ test("server-renders the Persian portfolio", async () => {
   const html = await response.text();
   assert.match(html, /شاهین/);
   assert.match(html, /مدیر فنی محصول/);
-  assert.match(html, /پروژه های منتخب/);
+  assert.match(html, /شواهد منتخب/);
 });
