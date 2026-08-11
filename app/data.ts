@@ -296,7 +296,7 @@ export const projects: Record<ProjectSlug, Project> = {
     ),
     role: t("Product Manager · Product Designer · Frontend Engineer · Brand and Content Lead", "مدیر محصول · طراح محصول · توسعه‌دهنده فرانت‌اند · مسئول برند و محتوا"),
     team: t("Direct collaboration with the family business owner and carpet specialists", "همکاری مستقیم با صاحب کسب‌وکار خانوادگی و کارشناسان فرش"),
-    cover: "/projects/hosseintalab/featured-carpet.webp",
+    cover: "/projects/hosseintalab/storefront-home.png",
     links: [
       { label: t("Live product", "محصول فعال"), href: "https://hosseintalab.ir" },
       { label: t("GitHub", "گیت هاب"), href: "https://github.com/ShawnMcRich/HTCarpets" },
@@ -374,6 +374,7 @@ export const projects: Record<ProjectSlug, Project> = {
       t("A consultation flow works better when it carries the exact product context into the conversation.", "وقتی اطلاعات همان محصول وارد گفت‌وگو شود، مشاوره برای مشتری و فروشنده روشن‌تر پیش می‌رود."),
     ],
     images: [
+      { src: "/projects/hosseintalab/storefront-home.png", alt: t("Launched Hosseintalab Persian storefront", "صفحه اصلی فروشگاه فعال حسین‌طلب") },
       { src: "/projects/hosseintalab/featured-carpet.webp", alt: t("Full documentary view of a live Hossein Talab carpet", "نمای کامل و مستند یکی از فرش‌های فعال حسین‌طلب"), compact: true },
       { src: "/projects/hosseintalab/tree-of-life.webp", alt: t("Individual Tree of Life carpet record", "تصویر کامل فرش درخت زندگی در کاتالوگ"), compact: true },
       { src: "/projects/hosseintalab/kashan-context.jpg", alt: t("Clearly labeled environmental context image for a Kashan carpet", "تصویر محیطی برچسب‌خورده برای نمایش فرش کاشان در فضا"), compact: true },
