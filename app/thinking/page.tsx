@@ -1,4 +1,4 @@
 import type { Metadata } from "next";
 import { ThinkingPage } from "../site";
-export const metadata: Metadata = { title: "Product Thinking", description: "Practical product notes from systems Shahin Ghanizadeh has built and operated.", alternates: { canonical: "/thinking", languages: { en: "/thinking", fa: "/fa/thinking" } } };
+export const metadata: Metadata = { title: "Product Notes by Shahin Ghanizadeh", description: "Practical product notes by Shahin Ghanizadeh on LLM cost, trust and moderation, and roadmap prioritization, drawn from Apex and Vibe.", alternates: { canonical: "/thinking", languages: { en: "/thinking", fa: "/fa/thinking" } }, openGraph: { type: "website", siteName: "Shahin Ghanizadeh", locale: "en_US", url: "/thinking", title: "Product Notes by Shahin Ghanizadeh", description: "Practical notes on LLM cost, trust and moderation, and roadmap prioritization.", images: [{ url: "/og.png", width: 1200, height: 630, alt: "Product notes by Shahin Ghanizadeh" }] } };
 export default function Thinking() { return <ThinkingPage locale="en"/>; }

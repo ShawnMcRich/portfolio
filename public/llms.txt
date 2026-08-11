@@ -1,0 +1,28 @@
+# Shahin Ghanizadeh
+
+> Official bilingual portfolio of Shahin Ghanizadeh, a technical product manager, product designer, and senior frontend engineer.
+
+Persian name: شاهین غنی‌زاده
+Alternate Persian spelling: شاهین غنی زاده
+Canonical website: https://shahinghanizadeh.ir
+
+## Official profiles
+
+- LinkedIn: https://www.linkedin.com/in/shahinghanizadeh
+- GitHub: https://github.com/ShawnMcRich
+- Instagram: https://www.instagram.com/shahinghanizadeh/
+
+## Main pages
+
+- About: https://shahinghanizadeh.ir/about
+- Product work: https://shahinghanizadeh.ir/work
+- Product notes: https://shahinghanizadeh.ir/thinking
+- Persian portfolio: https://shahinghanizadeh.ir/fa
+
+## Selected product case studies
+
+- Apex: https://shahinghanizadeh.ir/work/apex
+- Vibe: https://shahinghanizadeh.ir/work/vibe
+- First Choice: https://shahinghanizadeh.ir/work/first-choice
+- Hosseintalab: https://shahinghanizadeh.ir/work/hosseintalab
+- MRM: https://shahinghanizadeh.ir/work/mrm

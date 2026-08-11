@@ -1,4 +1,4 @@
 import type { Metadata } from "next";
 import { WorkPage } from "../site";
-export const metadata: Metadata = { title: "Work", description: "Selected product case studies by Shahin Ghanizadeh.", alternates: { canonical: "/work", languages: { en: "/work", fa: "/fa/work" } } };
+export const metadata: Metadata = { title: "Product Work and Case Studies", description: "Product case studies by Shahin Ghanizadeh covering Apex, Vibe, First Choice, Hosseintalab, and MRM across strategy, UX, engineering, QA, and launch.", alternates: { canonical: "/work", languages: { en: "/work", fa: "/fa/work" } }, openGraph: { type: "website", siteName: "Shahin Ghanizadeh", locale: "en_US", url: "/work", title: "Product Work and Case Studies by Shahin Ghanizadeh", description: "Evidence-led product case studies across strategy, UX, AI, engineering, QA, and launch.", images: [{ url: "/og.png", width: 1200, height: 630, alt: "Product work by Shahin Ghanizadeh" }] } };
 export default function Work() { return <WorkPage locale="en"/>; }

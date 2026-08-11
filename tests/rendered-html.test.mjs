@@ -25,6 +25,10 @@ test("server-renders the English portfolio", async () => {
   assert.match(html, /First Choice/);
   assert.match(html, /Hosseintalab/);
   assert.match(html, /MRM/);
+  assert.match(html, /#shahin-ghanizadeh/);
+  assert.match(html, /شاهین غنی‌زاده/);
+  assert.match(html, /شاهین غنی زاده/);
+  assert.match(html, /https:\/\/www\.linkedin\.com\/in\/shahinghanizadeh/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton/i);
 });
 
@@ -65,6 +69,49 @@ test("server-renders a deep case study", async () => {
   assert.match(html, /The calls I had to make/);
   assert.match(html, /What you can inspect/);
   assert.match(html, /What I am not claiming/);
+  assert.match(html, /Product case study and delivery by/);
+  assert.match(html, /case-study-structured-data/);
+  assert.match(html, /BreadcrumbList/);
+});
+
+test("server-renders an indexable English product note", async () => {
+  const response = await render("/thinking/llm-should-do-less");
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  assert.match(html, /Reducing LLM cost in Apex/);
+  assert.match(html, /By Shahin Ghanizadeh/);
+  assert.match(html, /article-structured-data/);
+  assert.match(html, /https:\/\/shahinghanizadeh\.ir\/thinking\/llm-should-do-less/);
+  assert.match(html, /\/fa\/thinking\/llm-should-do-less/);
+});
+
+test("server-renders an indexable Persian product note", async () => {
+  const response = await render("/fa/thinking/trust-is-a-product-cost");
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  assert.match(html, /طراحی اعتماد و رسیدگی در Vibe/);
+  assert.match(html, /نوشته شاهین غنی‌زاده/);
+  assert.match(html, /article-structured-data/);
+});
+
+test("about page declares Shahin as the profile page subject", async () => {
+  const response = await render("/about");
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  assert.match(html, /About Shahin Ghanizadeh/);
+  assert.match(html, /ProfilePage/);
+  assert.match(html, /profile-page-structured-data/);
+});
+
+test("sitemap includes bilingual case studies and product notes", async () => {
+  const response = await render("/sitemap.xml");
+  assert.equal(response.status, 200);
+  const xml = await response.text();
+  assert.match(xml, /\/work\/apex/);
+  assert.match(xml, /\/fa\/work\/apex/);
+  assert.match(xml, /\/thinking\/llm-should-do-less/);
+  assert.match(xml, /\/fa\/thinking\/llm-should-do-less/);
+  assert.match(xml, /hreflang="x-default"/);
 });
 
 test("server-renders the launched Hossein Talab case study", async () => {

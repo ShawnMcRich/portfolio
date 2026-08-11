@@ -13,6 +13,7 @@ import {
 import {
   experience,
   Locale,
+  NoteSlug,
   notes,
   Project,
   ProjectSlug,
@@ -360,8 +361,9 @@ export function Footer({ locale }: { locale: Locale }) {
       <div><strong>{locale === "fa" ? "شاهین غنی‌زاده" : "Shahin Ghanizadeh"}</strong><p>{locale === "fa" ? "مدیر فنی محصول و توسعه‌دهنده فرانت‌اند" : "Technical product manager and frontend engineer"}</p></div>
       <div className="footer-links">
         <a href="mailto:shahinghani@hotmail.com">Email</a>
-        <a href="https://www.linkedin.com/in/shahinghanizadeh" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a href="https://github.com/ShawnMcRich" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/shahinghanizadeh" target="_blank" rel="me noreferrer">LinkedIn</a>
+        <a href="https://github.com/ShawnMcRich" target="_blank" rel="me noreferrer">GitHub</a>
+        <a href="https://www.instagram.com/shahinghanizadeh/" target="_blank" rel="me noreferrer">Instagram</a>
       </div>
       <small>© {new Date().getFullYear()}</small>
     </footer>
@@ -474,7 +476,7 @@ export function HomePage({ locale }: { locale: Locale }) {
 
       <section className="notes-band">
         <header><p className="kicker">{c.notes}</p><h2>{c.notesIntro}</h2></header>
-        <div>{notes.map((note, index) => <Link key={note.slug} href={`${href(locale, "thinking")}#${note.slug}`}><span>0{index + 1}</span><h3>{local(note.title, locale)}</h3><p>{local(note.lead, locale)}</p><Arrow locale={locale} /></Link>)}</div>
+        <div>{notes.map((note, index) => <Link key={note.slug} href={href(locale, `thinking/${note.slug}`)}><span>0{index + 1}</span><h3>{local(note.title, locale)}</h3><p>{local(note.lead, locale)}</p><Arrow locale={locale} /></Link>)}</div>
       </section>
       <Contact locale={locale} />
       <Footer locale={locale} />
@@ -585,6 +587,10 @@ export function CaseStudyPage({ locale, slug }: { locale: Locale; slug: ProjectS
             <h1>{p.title}</h1>
             <p className="case-headline">{local(p.headline, locale)}</p>
             <p className="case-deck">{local(p.deck, locale)}</p>
+            <p className="case-byline">
+              {rtl ? "مطالعه موردی و اجرای محصول توسط " : "Product case study and delivery by "}
+              <Link href={href(locale, "about")}>{rtl ? "شاهین غنی‌زاده" : "Shahin Ghanizadeh"}</Link>
+            </p>
             {p.links && <div className="case-links">{p.links.map(link => <a key={link.href} href={link.href} target="_blank" rel="noreferrer">{link.href.includes("github") ? <Github size={17} /> : <ExternalLink size={17} />}{local(link.label, locale)}</a>)}</div>}
           </div>
           <dl className="case-meta">
@@ -656,8 +662,50 @@ export function ThinkingPage({ locale }: { locale: Locale }) {
     <main lang={locale} dir={rtl ? "rtl" : "ltr"} className={rtl ? "rtl" : ""}>
       <Header locale={locale} />
       <section className="page-hero thinking-hero"><p className="kicker">{rtl ? "تفکر محصول" : "Product thinking"}</p><h1>{c.thinkingTitle}</h1><p>{c.thinkingIntro}</p></section>
-      <section className="essay-index">{notes.map((note, index) => <a key={note.slug} href={`#${note.slug}`}><span>0{index + 1}</span><strong>{local(note.title, locale)}</strong></a>)}</section>
-      <section className="essays">{notes.map((note, index) => <article id={note.slug} key={note.slug}><header><span>0{index + 1}</span><div><h2>{local(note.title, locale)}</h2><p>{local(note.lead, locale)}</p></div></header><div>{note.paragraphs.map(paragraph => <p key={local(paragraph, locale)}>{local(paragraph, locale)}</p>)}</div><Link className="text-link" href={href(locale, `work/${index === 0 ? "apex" : "vibe"}`)}>{rtl ? "دیدن جزئیات پروژه" : "See the project details"}<Arrow locale={locale} /></Link></article>)}</section>
+      <section className="essay-index">{notes.map((note, index) => <Link key={note.slug} href={href(locale, `thinking/${note.slug}`)}><span>0{index + 1}</span><strong>{local(note.title, locale)}</strong></Link>)}</section>
+      <section className="essays essays-index">{notes.map((note, index) => <article key={note.slug}><header><span>0{index + 1}</span><div><h2>{local(note.title, locale)}</h2><p>{local(note.lead, locale)}</p></div></header><div><p>{local(note.paragraphs[0], locale)}</p></div><Link className="text-link" href={href(locale, `thinking/${note.slug}`)}>{c.readNote}<Arrow locale={locale} /></Link></article>)}</section>
+      <Contact locale={locale} />
+      <Footer locale={locale} />
+    </main>
+  );
+}
+
+export function ThoughtPage({ locale, slug }: { locale: Locale; slug: NoteSlug }) {
+  const note = notes.find(item => item.slug === slug)!;
+  const rtl = locale === "fa";
+  const project = projects[note.project];
+  const published = rtl ? "منتشرشده در ۲۱ مرداد ۱۴۰۵" : "Published August 12, 2026";
+  return (
+    <main lang={locale} dir={rtl ? "rtl" : "ltr"} className={rtl ? "rtl" : ""}>
+      <Header locale={locale} languagePath={`thinking/${slug}`} />
+      <article className="thought-article">
+        <header className="thought-hero">
+          <p className="kicker">{rtl ? "یادداشت محصول" : "Product note"}</p>
+          <h1>{local(note.title, locale)}</h1>
+          <p className="thought-lead">{local(note.lead, locale)}</p>
+          <div className="thought-meta">
+            <span>{rtl ? "نوشته شاهین غنی‌زاده" : "By Shahin Ghanizadeh"}</span>
+            <time dateTime={note.published}>{published}</time>
+            <span>{project.title}</span>
+          </div>
+        </header>
+        <div className="thought-body">
+          {note.paragraphs.map(paragraph => <p key={local(paragraph, locale)}>{local(paragraph, locale)}</p>)}
+        </div>
+        <footer className="thought-footer">
+          <div>
+            <p className="kicker">{rtl ? "نویسنده" : "Author"}</p>
+            <strong>{rtl ? "شاهین غنی‌زاده" : "Shahin Ghanizadeh"}</strong>
+            <p>{rtl ? "مدیر فنی محصول، طراح محصول و توسعه‌دهنده ارشد فرانت‌اند" : "Technical product manager, product designer, and senior frontend engineer"}</p>
+            <Link className="text-link" href={href(locale, "about")}>{rtl ? "درباره من" : "About Shahin"}<Arrow locale={locale} /></Link>
+          </div>
+          <Link className="thought-project" href={href(locale, `work/${note.project}`)}>
+            <span>{rtl ? "پروژه مرتبط" : "Related project"}</span>
+            <strong>{project.title}</strong>
+            <Arrow locale={locale} size={22} />
+          </Link>
+        </footer>
+      </article>
       <Contact locale={locale} />
       <Footer locale={locale} />
     </main>
@@ -670,7 +718,7 @@ export function AboutPage({ locale }: { locale: Locale }) {
   return (
     <main lang={locale} dir={rtl ? "rtl" : "ltr"} className={rtl ? "rtl" : ""}>
       <Header locale={locale} />
-      <section className="about-hero"><p className="kicker">{rtl ? "درباره من" : "About"}</p><h1>{c.aboutTitle}</h1><div>{c.aboutBody.map(paragraph => <p key={paragraph}>{paragraph}</p>)}</div></section>
+      <section className="about-hero"><header className="about-heading"><img className="about-portrait" src="/shahin-ghanizadeh.jpg" width="1200" height="1200" alt={rtl ? "شاهین غنی‌زاده" : "Shahin Ghanizadeh"} /><p className="kicker">{rtl ? "درباره من" : "About"}</p><h1>{rtl ? "شاهین غنی‌زاده" : "Shahin Ghanizadeh"}</h1><p>{c.aboutTitle}</p></header><div>{c.aboutBody.map(paragraph => <p key={paragraph}>{paragraph}</p>)}</div></section>
       <section className="principles-band"><header><p className="kicker">{c.principles}</p></header><div>{c.principleItems.map(([title, body], index) => <article key={title}><span>0{index + 1}</span><h2>{title}</h2><p>{body}</p></article>)}</div></section>
       <section id="experience" className="content-section full-experience"><header className="section-heading"><div><p className="kicker">{c.path}</p><h2>{c.pathIntro}</h2></div></header><div className="timeline">{experience.map(item => <article key={item.company}><time>{local(item.period, locale)}</time><div><h3>{local(item.title, locale)}</h3><strong>{item.company}</strong><p>{local(item.summary, locale)}</p></div></article>)}</div></section>
       <section className="education-band"><p className="kicker">{c.education}</p><p>{c.educationBody}</p><a className="button button-dark" href="/documents/shahin-ghanizadeh-resume.pdf"><Download size={18} />{c.resume}</a></section>

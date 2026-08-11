@@ -1,11 +1,22 @@
 export type Locale = "en" | "fa";
 export type ProjectSlug = "apex" | "vibe" | "first-choice" | "hosseintalab" | "mrm";
+export type NoteSlug = "llm-should-do-less" | "trust-is-a-product-cost" | "roadmaps-are-layers";
 
 type LocalizedText = { en: string; fa: string };
 type Metric = { value: string | LocalizedText; label: LocalizedText; note?: LocalizedText };
 type Detail = { title: LocalizedText; body: LocalizedText; status?: "live" | "shipped" | "designed" };
 type Evidence = { title: LocalizedText; body: LocalizedText; kind: LocalizedText };
 type Image = { src: string; alt: LocalizedText; compact?: boolean };
+
+export type Note = {
+  slug: NoteSlug;
+  project: ProjectSlug;
+  published: string;
+  updated: string;
+  title: LocalizedText;
+  lead: LocalizedText;
+  paragraphs: LocalizedText[];
+};
 
 export type Project = {
   slug: ProjectSlug;
@@ -486,9 +497,12 @@ export const experience = [
   },
 ];
 
-export const notes = [
+export const notes: Note[] = [
   {
     slug: "llm-should-do-less",
+    project: "apex",
+    published: "2026-08-12",
+    updated: "2026-08-12",
     title: t("Reducing LLM cost in Apex", "کاهش هزینه LLM در Apex"),
     lead: t("A product lesson from cutting Apex model cost by roughly 95%.", "چطور هزینه LLM در Apex را حدود ۹۵ درصد پایین آوردم و محصول هم بهتر شد."),
     paragraphs: [
@@ -499,6 +513,9 @@ export const notes = [
   },
   {
     slug: "trust-is-a-product-cost",
+    project: "vibe",
+    published: "2026-08-12",
+    updated: "2026-08-12",
     title: t("Designing trust and moderation in Vibe", "طراحی اعتماد و رسیدگی در Vibe"),
     lead: t("A review platform cannot outsource credibility to a verified badge.", "اعتماد در یک پلتفرم نظر با یک تیک تأیید ساخته نمی‌شود."),
     paragraphs: [
@@ -509,6 +526,9 @@ export const notes = [
   },
   {
     slug: "roadmaps-are-layers",
+    project: "vibe",
+    published: "2026-08-12",
+    updated: "2026-08-12",
     title: t("Layered roadmap prioritization in Vibe", "اولویت‌بندی لایه‌ای در نقشه راه Vibe"),
     lead: t("How I sequence core value, safety, operations, and monetization.", "چرا در Vibe بعضی قابلیت‌های جذاب را عمداً برای بعد گذاشتم."),
     paragraphs: [
@@ -518,3 +538,5 @@ export const notes = [
     ],
   },
 ];
+
+export const noteSlugs = notes.map(note => note.slug);
