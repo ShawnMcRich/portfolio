@@ -1,5 +1,5 @@
 export type Locale = "en" | "fa";
-export type ProjectSlug = "apex" | "vibe" | "first-choice" | "mrm";
+export type ProjectSlug = "apex" | "vibe" | "first-choice" | "hosseintalab" | "mrm";
 
 type LocalizedText = { en: string; fa: string };
 type Metric = { value: string | LocalizedText; label: LocalizedText; note?: LocalizedText };
@@ -10,7 +10,7 @@ type Image = { src: string; alt: LocalizedText; compact?: boolean };
 export type Project = {
   slug: ProjectSlug;
   number: string;
-  accent: "green" | "blue" | "red" | "amber";
+  accent: "green" | "blue" | "red" | "navy" | "amber";
   title: string;
   productType: LocalizedText;
   period: LocalizedText;
@@ -278,9 +278,111 @@ export const projects: Record<ProjectSlug, Project> = {
       { src: "/projects/first-choice/search.jpg", alt: t("Tehran property search and filtering", "جست‌وجو و فیلتر ملک در تهران") },
     ],
   },
+  hosseintalab: {
+    slug: "hosseintalab",
+    number: "04",
+    accent: "navy",
+    title: "Hosseintalab",
+    productType: t("Persian handwoven-carpet commerce", "فروشگاه آنلاین فرش دستباف"),
+    period: t("2026", "۱۴۰۵"),
+    stage: t("Live · Publicly launched", "فعال · لانچ عمومی"),
+    headline: t(
+      "I took a multigenerational Tehran carpet business from an undefined online presence to a launched Persian storefront.",
+      "حضور آنلاین حسین‌طلب را از یک درخواست کلی به فروشگاهی واقعی با ۲۰ فرش، صفحه محصول و مسیر روشن مشاوره و خرید تبدیل کردم."
+    ),
+    deck: t(
+      "I led product strategy, catalog architecture, brand direction, Persian UX writing, interface design, frontend delivery, content standards, QA, and launch.",
+      "استراتژی محصول، ساختار کاتالوگ، مسیر برند، متن فارسی، طراحی رابط، توسعه فرانت‌اند، استانداردهای محتوا، QA و لانچ را بر عهده داشتم."
+    ),
+    role: t("Product Manager · Product Designer · Frontend Engineer · Brand and Content Lead", "مدیر محصول · طراح محصول · توسعه‌دهنده فرانت‌اند · مسئول برند و محتوا"),
+    team: t("Direct collaboration with the family business owner and carpet specialists", "همکاری مستقیم با صاحب کسب‌وکار خانوادگی و کارشناسان فرش"),
+    cover: "/projects/hosseintalab/featured-carpet.webp",
+    links: [
+      { label: t("Live product", "محصول فعال"), href: "https://hosseintalab.ir" },
+      { label: t("GitHub", "گیت هاب"), href: "https://github.com/ShawnMcRich/HTCarpets" },
+    ],
+    metrics: [
+      { value: t("20", "۲۰"), label: t("live individual carpet records", "فرش واقعی در مجموعه فعال") },
+      { value: t("13", "۱۳"), label: t("weaving origins represented", "محل بافت در کاتالوگ") },
+      { value: t("2 paths", "۲ مسیر"), label: t("home and antique buying journeys", "فرش خانه و فرش آنتیک") },
+      { value: t("Est. 1290 SH", "از ۱۲۹۰"), label: t("offline heritage brought online", "سابقه کسب‌وکار خانوادگی") },
+    ],
+    context: t(
+      "Hossein Talab is a family carpet business in Tehran's carpet bazaar with a long-standing offline reputation and experience in rare and export-quality carpets. That expertise was not represented in a coordinated digital product.",
+      "حسین‌طلب یک کسب‌وکار خانوادگی در بازار فرش تهران است که سال‌ها در فروش فرش‌های دستباف، آنتیک و صادراتی فعالیت داشته، اما این سابقه و تخصص در یک محصول دیجیتال منسجم دیده نمی‌شد."
+    ),
+    problem: t(
+      "A handwoven carpet is a unique, expensive item. Buyers need to inspect the exact piece, understand specialist attributes, compare price and condition, and know how to continue the purchase without being expected to speak like a carpet dealer.",
+      "هر فرش دستباف یک تخته منحصربه‌فرد و خریدی پرهزینه است. خریدار باید بتواند همان فرش را کامل ببیند، مشخصات تخصصی و وضعیتش را بفهمد، قیمت را بداند و بدون آشنایی قبلی با اصطلاحات بازار برای خرید یا مشاوره اقدام کند."
+    ),
+    users: t(
+      "People furnishing a home, collectors and antique buyers, interior designers, and customers who want specialist guidance before purchasing.",
+      "افرادی که برای خانه فرش می‌خواهند، خریداران فرش آنتیک، طراحان داخلی و کسانی که پیش از خرید به راهنمایی کارشناس نیاز دارند."
+    ),
+    northStar: t(
+      "A customer can inspect one real carpet, understand its important facts and price, and contact the seller with enough context to continue the purchase.",
+      "کاربر بتواند یک فرش واقعی را با اطلاعات و قیمتش بررسی کند و هنگام تماس با فروشنده دقیقاً بداند درباره کدام تخته صحبت می‌کند."
+    ),
+    constraints: [
+      { title: t("Unique inventory", "موجودی تک‌تخته"), body: t("Every carpet needs its own images, dimensions, origin, condition, price, and availability state; generic product templates are not enough.", "هر فرش به تصویر، ابعاد، محل بافت، وضعیت، قیمت و موجودی جداگانه نیاز دارد و نمی‌شود اطلاعات چند تخته را با یک قالب عمومی جایگزین کرد.") },
+      { title: t("Visual accuracy", "دقت تصویر"), body: t("Context images can help with scale, but they must be clearly separated from documentary images of the actual carpet.", "تصویر محیطی به درک اندازه و حضور فرش در فضا کمک می‌کند، اما باید کاملاً از تصاویر واقعی همان تخته جدا و مشخص باشد.") },
+      { title: t("Specialist language", "اصطلاحات تخصصی"), body: t("The product had to preserve real carpet terminology while explaining enough for a non-specialist customer to make progress.", "محصول باید اصطلاحات درست بازار فرش را حفظ می‌کرد و در عین حال برای خریدار غیرمتخصص قابل فهم می‌ماند.") },
+      { title: t("Operational readiness", "آمادگی فروش"), body: t("Publishing pages was only useful if the business could identify enquiries, confirm inventory, share further evidence, and coordinate visits or purchases.", "انتشار سایت زمانی ارزش داشت که فروشگاه بتواند درخواست را به فرش مشخص وصل کند، موجودی را تأیید کند و ادامه خرید یا بازدید را هماهنگ کند.") },
+    ],
+    phases: [
+      { title: t("Define the business and product", "تعریف محصول و مدل فروش"), body: t("I worked with the owner to turn a broad request for an online presence into clear audiences, commercial paths, priorities, and an executable roadmap.", "همراه صاحب کسب‌وکار، درخواست کلی حضور آنلاین را به مخاطب‌های مشخص، مسیرهای فروش، اولویت‌ها و نقشه راه قابل اجرا تبدیل کردم."), status: "shipped" },
+      { title: t("Structure the brand and catalog", "ساخت برند و کاتالوگ"), body: t("I established the digital identity, Persian voice, product taxonomy, required product fields, photography rules, and the distinction between home and antique inventory.", "هویت دیجیتال، لحن فارسی، دسته‌بندی فرش‌ها، اطلاعات لازم هر محصول، قواعد عکاسی و مرز میان فرش خانه و فرش آنتیک را مشخص کردم."), status: "shipped" },
+      { title: t("Design and build the storefront", "طراحی و توسعه فروشگاه"), body: t("I designed the RTL journeys and implemented the responsive frontend, catalog controls, product records, buying guides, and consultation routes.", "مسیرهای RTL را طراحی کردم و فرانت‌اند واکنش‌گرا، فیلتر و مرتب‌سازی کاتالوگ، صفحات محصول، راهنمای خرید و مسیرهای مشاوره را ساختم."), status: "live" },
+      { title: t("Publish real inventory and launch", "ثبت موجودی واقعی و لانچ"), body: t("The launch version went public with 20 individual carpets, visible prices, product photography, origin pages, and direct contact options.", "نسخه عمومی با ۲۰ فرش واقعی، قیمت‌های مشخص، تصاویر هر تخته، صفحات محل بافت و راه‌های مستقیم تماس لانچ شد."), status: "live" },
+    ],
+    decisions: [
+      { title: t("Separate home and antique journeys", "تفکیک فرش خانه و فرش آنتیک"), body: t("Residential selection starts with practical fit and appearance. Antique evaluation places more weight on authenticity, age, condition, restoration, and specialist consultation.", "در مسیر فرش خانه، تناسب با فضا و ظاهر اهمیت بیشتری دارد. در مسیر آنتیک، اصالت، قدمت، سلامت، مرمت و نظر کارشناس پررنگ‌تر است."), status: "live" },
+      { title: t("Show the complete piece first", "نمایش کامل همان تخته"), body: t("Every listing begins with a full, uncropped view of the actual carpet. Environmental imagery is labeled separately and never replaces the documentary record.", "هر محصول با نمای کامل و بدون برش همان فرش شروع می‌شود. تصاویر محیطی جداگانه معرفی می‌شوند و جای تصویر مستند محصول را نمی‌گیرند."), status: "live" },
+      { title: t("Publish price before contact", "نمایش قیمت پیش از تماس"), body: t("The catalog shows recorded prices directly so customers can define a realistic shortlist before speaking with the store.", "قیمت ثبت‌شده در خود کاتالوگ نمایش داده می‌شود تا کاربر پیش از تماس بتواند محدوده انتخابش را مشخص کند."), status: "live" },
+      { title: t("Make consultation part of the journey", "قرار دادن مشاوره در مسیر خرید"), body: t("Customers can continue with a name, page link, or screenshot instead of memorizing an inventory code or completing a generic contact form.", "کاربر می‌تواند نام فرش، لینک صفحه یا اسکرین‌شات را بفرستد و بدون حفظ کردن کد موجودی، گفت‌وگو را درباره همان تخته ادامه دهد."), status: "live" },
+    ],
+    architecture: [
+      { title: t("Discovery", "کشف"), body: t("Current collection, weaving-origin pages, guides, and home versus antique entry points.", "مجموعه موجود، صفحه‌های محل بافت، راهنماها و مسیرهای جدا برای خانه و آنتیک.") },
+      { title: t("Catalog", "کاتالوگ"), body: t("Search, origin filter, collection type, sorting, availability, and visible pricing across real inventory.", "جست‌وجو، فیلتر محل بافت، نوع مجموعه، مرتب‌سازی، وضعیت موجودی و قیمت.") },
+      { title: t("Product record", "شناسنامه محصول"), body: t("Full and detail photography, dimensions, origin, materials, age and condition notes, price, and unique identity.", "تصاویر کامل و جزئیات، ابعاد، محل بافت، جنس، توضیح قدمت و وضعیت، قیمت و شناسه هر تخته.") },
+      { title: t("Knowledge", "راهنما"), body: t("Buying guidance and carpet terminology explain what customers should inspect before contacting the store.", "راهنمای خرید و اصطلاحات فرش مشخص می‌کنند کاربر پیش از تماس چه چیزهایی را بررسی کند.") },
+      { title: t("Enquiry", "ارتباط"), body: t("WhatsApp, Instagram, phone, and store-visit routes preserve the context of the selected carpet.", "واتساپ، اینستاگرام، تماس تلفنی و بازدید حضوری، گفت‌وگو را با همان فرش انتخاب‌شده ادامه می‌دهند.") },
+    ],
+    scope: [
+      t("Product strategy, launch scope, roadmap, Jira backlog, and stakeholder coordination", "استراتژی محصول، محدوده لانچ، نقشه راه، بک‌لاگ Jira و هماهنگی با صاحب کسب‌وکار"),
+      t("Brand positioning, identity direction, Persian voice, and customer-facing content", "جایگاه برند، مسیر هویت بصری، لحن فارسی و محتوای کاربر"),
+      t("Information architecture, catalog taxonomy, customer journeys, UX/UI, and frontend implementation", "معماری اطلاعات، دسته‌بندی کاتالوگ، مسیرهای کاربر، UX و UI و پیاده‌سازی فرانت‌اند"),
+      t("Product-data requirements, photography standards, image integrity, and launch content", "نیازمندی داده محصول، استاندارد عکاسی، حفظ اصالت تصویر و محتوای لانچ"),
+      t("Responsive QA, accessibility, production validation, launch checks, and documentation", "QA واکنش‌گرایی، دسترس‌پذیری، بررسی نسخه نهایی، کنترل‌های لانچ و مستندسازی"),
+    ],
+    evidence: [
+      { kind: t("Live product", "محصول فعال"), title: t("A public catalog with real inventory", "کاتالوگ عمومی با موجودی واقعی"), body: t("The launched site currently presents 20 individual carpets with searchable records, prices, origin data, product pages, and direct enquiry routes.", "سایت فعال در حال حاضر ۲۰ فرش را با جست‌وجو، قیمت، محل بافت، صفحه محصول و مسیر مستقیم ارتباط نمایش می‌دهد.") },
+      { kind: t("Delivery", "اجرا"), title: t("Decisions documented from strategy through launch", "مستندات از استراتژی تا لانچ"), body: t("The repository, Jira project, decision records, roadmap, taxonomy, content guide, photography standard, and project journal connect product choices to delivery.", "مخزن کد، پروژه Jira، سابقه تصمیم‌ها، نقشه راه، دسته‌بندی کاتالوگ، راهنمای محتوا، استاندارد عکاسی و گزارش پروژه، مسیر تصمیم تا اجرا را ثبت کرده‌اند.") },
+      { kind: t("Content integrity", "اصالت محتوا"), title: t("A documented boundary between evidence and illustration", "مرز مشخص میان تصویر واقعی و تصویر محیطی"), body: t("The product treats the carpet as documentary evidence: environmental scenes are labeled, while motifs, borders, wear, damage, and colors of the actual piece are preserved.", "در محصول، خود فرش یک سند است. تصاویر محیطی برچسب مشخص دارند و نقش، حاشیه، فرسودگی، آسیب و رنگ تخته واقعی تغییر داده نمی‌شود.") },
+    ],
+    outcome: t(
+      "Hossein Talab is publicly launched with 20 real inventory records, product-detail pages, visible pricing, origin-based discovery, buying guidance, and direct consultation paths.",
+      "حسین‌طلب با ۲۰ فرش واقعی، صفحه‌های محصول، قیمت مشخص، جست‌وجو بر اساس محل بافت، راهنمای خرید و مسیرهای مستقیم مشاوره به‌صورت عمومی لانچ شده است."
+    ),
+    statusNote: t(
+      "The product is live, but sales conversion, search growth, and retention need a longer measurement period and are not claimed here.",
+      "محصول فعال است، اما برای اعلام نتیجه درباره فروش، رشد جست‌وجو و بازگشت کاربر هنوز به دوره اندازه‌گیری طولانی‌تری نیاز داریم."
+    ),
+    lessons: [
+      t("For unique inventory, the product record has to be treated as evidence, not promotional decoration.", "در فروش کالای تک‌تخته، صفحه محصول باید سند قابل بررسی باشد، نه فقط تصویر تبلیغاتی."),
+      t("Specialist terminology can remain accurate while the journey begins with questions an ordinary customer can answer.", "می‌شود اصطلاحات تخصصی را دقیق نگه داشت و در عین حال مسیر خرید را با سؤال‌های ساده و قابل پاسخ شروع کرد."),
+      t("A consultation flow works better when it carries the exact product context into the conversation.", "وقتی اطلاعات همان محصول وارد گفت‌وگو شود، مشاوره برای مشتری و فروشنده روشن‌تر پیش می‌رود."),
+    ],
+    images: [
+      { src: "/projects/hosseintalab/featured-carpet.webp", alt: t("Full documentary view of a live Hossein Talab carpet", "نمای کامل و مستند یکی از فرش‌های فعال حسین‌طلب"), compact: true },
+      { src: "/projects/hosseintalab/tree-of-life.webp", alt: t("Individual Tree of Life carpet record", "تصویر کامل فرش درخت زندگی در کاتالوگ"), compact: true },
+      { src: "/projects/hosseintalab/kashan-context.jpg", alt: t("Clearly labeled environmental context image for a Kashan carpet", "تصویر محیطی برچسب‌خورده برای نمایش فرش کاشان در فضا"), compact: true },
+      { src: "/projects/hosseintalab/tabriz-context.jpg", alt: t("Environmental context image for a Tabriz carpet", "تصویر محیطی فرش تبریز"), compact: true },
+    ],
+  },
   mrm: {
     slug: "mrm",
-    number: "04",
+    number: "05",
     accent: "amber",
     title: "MRM",
     productType: t("Business continuity messenger", "پیام‌رسان داخلی برای زمان قطعی"),

@@ -41,7 +41,7 @@ const copy = {
     contactCta: "Email me",
     selectedWork: "Selected work",
     selectedIntro:
-      "Four products showing the scope of my work, the decisions I owned, and the current state of each project.",
+      "Five products showing the scope of my work, the decisions I owned, and the current state of each project.",
     allWork: "All projects",
     proof: "The short version",
     capabilities: "What I do in a product team",
@@ -141,7 +141,7 @@ const copy = {
     contactCta: "ارسال ایمیل",
     selectedWork: "پروژه‌های منتخب",
     selectedIntro:
-      "این چهار پروژه بخش‌های مختلف کارم را نشان می‌دهند؛ از تعریف محصول و طراحی تا اجرا و اداره آن.",
+      "این پنج پروژه بخش‌های مختلف کارم را نشان می‌دهند؛ از تعریف محصول و طراحی تا اجرا و اداره آن.",
     allWork: "مشاهده همه پروژه‌ها",
     proof: "خلاصه ماجرا",
     capabilities: "کاری که در یک تیم محصول انجام می‌دهم",
@@ -306,7 +306,7 @@ const serviceCopy = {
   },
 } as const;
 
-const featured: ProjectSlug[] = ["apex", "vibe", "first-choice"];
+const featured: ProjectSlug[] = ["apex", "vibe", "first-choice", "hosseintalab"];
 
 function root(locale: Locale) {
   return locale === "fa" ? "/fa" : "";
@@ -456,7 +456,7 @@ export function HomePage({ locale }: { locale: Locale }) {
         </header>
         <div className="project-stack">{featured.map(slug => <ProjectPreview key={slug} project={projects[slug]} locale={locale} />)}</div>
         <div className="resilience-callout">
-          <div><p className="kicker">04 · {local(projects.mrm.stage, locale)}</p><h2>{projects.mrm.title}</h2><p>{local(projects.mrm.headline, locale)}</p></div>
+          <div><p className="kicker">05 · {local(projects.mrm.stage, locale)}</p><h2>{projects.mrm.title}</h2><p>{local(projects.mrm.headline, locale)}</p></div>
           <div><strong>{rtl ? "حدود ۴۰" : "~40"}</strong><span>{rtl ? "نفر از ابزار استفاده کردند تا اینترنت بازگشت" : "people used the tool until connectivity returned"}</span></div>
           <Link className="button button-plain" href={href(locale, "work/mrm")}>{c.viewCase}<Arrow locale={locale} /></Link>
         </div>
@@ -506,7 +506,7 @@ export function ServicesPage({ locale }: { locale: Locale }) {
   const s = serviceCopy[locale];
   const rtl = locale === "fa";
   const enquirySubject = encodeURIComponent(locale === "fa" ? "درخواست همکاری پروژه‌ای" : "Project enquiry");
-  const evidence: ProjectSlug[] = ["first-choice", "apex", "vibe"];
+  const evidence: ProjectSlug[] = ["first-choice", "hosseintalab", "apex", "vibe"];
 
   return (
     <main lang={locale} dir={rtl ? "rtl" : "ltr"} className={rtl ? "rtl" : ""}>
@@ -541,7 +541,7 @@ export function ServicesPage({ locale }: { locale: Locale }) {
         <header><p className="kicker">{s.evidenceLabel}</p><h2>{s.evidenceTitle}</h2></header>
         <div>{evidence.map(slug => {
           const project = projects[slug];
-          return <Link key={slug} href={href(locale, `work/${slug}`)}>{project.cover && <img src={project.cover} alt={local(project.headline, locale)} />}<p className="kicker">{local(project.productType, locale)}</p><h3>{project.title}</h3><p>{local(project.deck, locale)}</p><span>{copy[locale].viewCase}<Arrow locale={locale} /></span></Link>;
+          return <Link className={`accent-${project.accent}`} key={slug} href={href(locale, `work/${slug}`)}>{project.cover && <img src={project.cover} alt={local(project.headline, locale)} />}<p className="kicker">{local(project.productType, locale)}</p><h3>{project.title}</h3><p>{local(project.deck, locale)}</p><span>{copy[locale].viewCase}<Arrow locale={locale} /></span></Link>;
         })}</div>
       </section>
 
