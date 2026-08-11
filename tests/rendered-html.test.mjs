@@ -19,7 +19,7 @@ test("server-renders the English portfolio", async () => {
   const html = await response.text();
   assert.match(html, /Shahin Ghanizadeh/);
   assert.match(html, /Technical Product Manager/);
-  assert.match(html, /See what I built/);
+  assert.match(html, /View projects/);
   assert.match(html, /Apex/);
   assert.match(html, /Vibe/);
   assert.match(html, /First Choice/);
@@ -33,7 +33,25 @@ test("server-renders the Persian portfolio", async () => {
   const html = await response.text();
   assert.match(html, /شاهین/);
   assert.match(html, /مدیر فنی محصول/);
-  assert.match(html, /چند محصولی که ساخته‌ام/);
+  assert.match(html, /پروژه‌های منتخب/);
+  assert.match(html, /انتخاب اول/);
+});
+
+test("server-renders the English services page", async () => {
+  const response = await render("/services");
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  assert.match(html, /Product, UX, and web development services/);
+  assert.match(html, /Projects I can take responsibility for/);
+  assert.match(html, /First Choice/);
+});
+
+test("server-renders the Persian services page", async () => {
+  const response = await render("/fa/services");
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  assert.match(html, /مدیریت محصول، طراحی تجربه کاربر و توسعه وب/);
+  assert.match(html, /کارهایی که می‌توانم مسئولیتشان را بر عهده بگیرم/);
   assert.match(html, /انتخاب اول/);
 });
 

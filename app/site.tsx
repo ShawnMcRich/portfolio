@@ -27,47 +27,48 @@ const copy = {
       ["Experience", "about#experience"],
       ["Notes", "thinking"],
       ["About", "about"],
+      ["Services", "services"],
     ],
     language: "FA",
     languageHref: "/fa",
     resume: "Download résumé",
     role: "Technical Product Manager · Product Designer · Senior Frontend Engineer",
-    intro: "For years, I have decided what to build and how to build it, then stayed with the work through release.",
+    intro: "I work across product management, product design, and frontend engineering.",
     subintro:
-      "I started in frontend. Then I became the person deciding what we should build, sketching the UX, ordering the work, sorting things out with backend, testing the awkward cases, and staying until release. I still work that way.",
-    availability: "Open to remote product roles",
-    workCta: "See what I built",
+      "My work usually starts with defining the problem and setting priorities, then continues through UX, technical coordination, QA, and release. On several products, I also built the frontend or the complete application.",
+    availability: "Current work",
+    workCta: "View projects",
     contactCta: "Email me",
-    selectedWork: "A few things I built",
+    selectedWork: "Selected work",
     selectedIntro:
-      "These are the projects I can discuss properly: what was messy at the start, what I decided, what I built myself, and where the product stands now.",
-    allWork: "View all work",
+      "Four products showing the scope of my work, the decisions I owned, and the current state of each project.",
+    allWork: "All projects",
     proof: "The short version",
-    capabilities: "I do not hand over the idea and disappear",
+    capabilities: "What I do in a product team",
     capabilitiesIntro:
-      "I am at my best when product, design, and engineering need to think together. I can make the call, draw the flow, explain it to the team, and understand what the implementation will cost.",
+      "My responsibilities vary by project, but they usually cover the work between an initial business need and a tested release.",
     capabilityItems: [
-      ["Understand it", "Talk to people, inspect the business, and find the problem underneath the requested feature."],
-      ["Choose", "Decide what belongs in the core, what depends on it, and what can wait."],
-      ["Draw it", "Use flows and working UI to make the idea concrete before the team commits to it."],
-      ["Build it", "Stay close to frontend, backend, QA, risk, and release instead of managing from a distance."],
-      ["Correct it", "Watch what happens, trace the failures, and change the product when reality disagrees."],
+      ["Problem definition", "Speak with users and stakeholders, understand the business, and define the problem before committing to a feature."],
+      ["Scope and priority", "Separate the product core from later work, identify dependencies, and set an executable order."],
+      ["UX and specification", "Prepare user flows, interfaces, requirements, and acceptance criteria so the team can work from the same understanding."],
+      ["Delivery", "Work directly with frontend, backend, and QA; contribute to implementation when the project needs it."],
+      ["Release and review", "Test the main journeys, classify defects, support release, and revise decisions when the evidence changes."],
     ],
-    path: "Experience path",
+    path: "Experience",
     pathIntro:
-      "Some of these dates overlap because I was building my own products while running a company and doing client work. That is the honest version of the timeline.",
-    fullHistory: "See the full timeline",
-    notes: "Things I have learned the expensive way",
+      "Some periods overlap because I built my own products while running a software company and delivering client work.",
+    fullHistory: "Full experience",
+    notes: "Product notes",
     notesIntro:
-      "Short notes from products I have built, priced, broken, fixed, and kept running.",
+      "Notes on decisions I have made in live and pre-launch products.",
     readNote: "Read note",
-    contactTitle: "Have a product problem that needs both judgment and delivery?",
+    contactTitle: "Contact",
     contactBody:
-      "I am exploring technical product management, AI product, product ownership, and product-minded frontend leadership roles.",
-    workTitle: "The work, including the parts that did not fit neatly.",
+      "I am available for remote product roles and selected product, UX, and web projects.",
+    workTitle: "Product work",
     workIntro:
-      "Each case explains why the product existed, what I personally took responsibility for, the decisions that mattered, and what is still too early to call a success.",
-    viewCase: "Open the project",
+      "Each case study covers the problem, my responsibilities, major decisions, implementation, and current status.",
+    viewCase: "View project",
     caseNav: [
       ["Brief", "brief"],
       ["Constraints", "constraints"],
@@ -101,20 +102,20 @@ const copy = {
       designed: "Designed / specified",
       artifact: "Evidence",
     },
-    thinkingTitle: "Notes from products I have actually had to make work.",
+    thinkingTitle: "Product notes",
     thinkingIntro:
-      "Three ideas I can defend with product decisions, code, operating constraints, and outcomes.",
-    aboutTitle: "Frontend was where I started. It was never where the work stopped.",
+      "Three notes based on work in Apex and Vibe.",
+    aboutTitle: "My work has covered engineering, product, and company operations.",
     aboutBody: [
-      "I started in frontend engineering and UX, but the work never stayed inside the frontend. I was usually the person asking what should be built, drawing the flow, deciding what had to come first, translating it for frontend and backend, testing the result, and noticing operational or legal risk before release.",
-      "Later I built products and a company of my own. That meant pricing, customer conversations, support, infrastructure, launch decisions, and being the person responsible when something went wrong. Today I call the job technical product management. I still write code because it keeps my decisions honest.",
+      "I started in frontend engineering and UX. As my responsibilities grew, I also took ownership of feature definition, prioritization, user flows, coordination with backend teams, QA, and release readiness.",
+      "I later founded products and managed a software company. That added pricing, customer conversations, support, infrastructure, launch planning, and day-to-day operating decisions to my work. I continue to write code, particularly when direct technical involvement helps the team move faster or make a better decision.",
     ],
     principles: "How I tend to work",
     principleItems: [
-      ["Value before volume", "A roadmap should protect the core user outcome before it collects features."],
-      ["Clarity before ceremony", "Documents, frameworks, and meetings should improve a decision or a handoff."],
-      ["Trust needs operations", "Safety, moderation, privacy, support, and appeals are product systems."],
-      ["Technical truth matters", "I separate what is live, what is shipped but not proven, and what is still designed."],
+      ["Prioritization", "I define the core user journey first and add later features around it."],
+      ["Documentation", "I use requirements, flows, and acceptance criteria when they make a decision or handoff clearer."],
+      ["Operations", "Moderation, privacy, support, and appeals are designed as part of the product, not left for after launch."],
+      ["Technical involvement", "I distinguish clearly between work that is live, implemented but not yet proven, and still in design."],
     ],
     education: "Education and communication",
     educationBody:
@@ -126,47 +127,48 @@ const copy = {
       ["سابقه", "about#experience"],
       ["یادداشت‌ها", "thinking"],
       ["درباره من", "about"],
+      ["خدمات", "services"],
     ],
     language: "EN",
     languageHref: "/",
     resume: "دانلود رزومه",
     role: "مدیر فنی محصول · طراح محصول · توسعه‌دهنده ارشد فرانت‌اند",
-    intro: "سال‌هاست درباره اینکه چه چیزی بسازیم و چطور بسازیم تصمیم می‌گیرم و کار را تا انتشار جلو می‌برم.",
+    intro: "در مدیریت محصول، طراحی تجربه کاربر و توسعه فرانت‌اند کار می‌کنم.",
     subintro:
-      "از فرانت‌اند شروع کردم، اما خیلی زود درگیر تصمیم‌های قبل و بعد از کدنویسی شدم: چه چیزی بسازیم، تجربه کاربر چطور باشد، کدام کار زودتر انجام شود و محصول چطور به دست کاربر برسد. هنوز هم از ایده تا تست و انتشار کنار کار می‌مانم.",
-    availability: "آماده همکاری ریموت با تیم‌های محصول",
-    workCta: "دیدن پروژه‌ها",
+      "کارم معمولاً از شناخت مسئله و تعیین اولویت شروع می‌شود و تا طراحی، هماهنگی با تیم فنی، تست و انتشار ادامه دارد. در چند محصول، فرانت‌اند یا کل برنامه را هم خودم ساخته‌ام.",
+    availability: "کارهای فعلی",
+    workCta: "مشاهده پروژه‌ها",
     contactCta: "ارسال ایمیل",
-    selectedWork: "چند محصولی که ساخته‌ام",
+    selectedWork: "پروژه‌های منتخب",
     selectedIntro:
-      "اینجا هر پروژه را با جزئیات واقعی‌اش توضیح داده‌ام: مسئله از کجا شروع شد، چه تصمیم‌هایی گرفتم، کدام بخش‌ها را خودم ساختم و محصول امروز کجاست.",
-    allWork: "همه پروژه‌ها",
+      "این چهار پروژه بخش‌های مختلف کارم را نشان می‌دهند؛ از تعریف محصول و طراحی تا اجرا و اداره آن.",
+    allWork: "مشاهده همه پروژه‌ها",
     proof: "خلاصه ماجرا",
-    capabilities: "فقط ایده نمی‌دهم؛ تا اجرا کنار تیم می‌مانم",
+    capabilities: "کاری که در یک تیم محصول انجام می‌دهم",
     capabilitiesIntro:
-      "معمولاً جایی بیشترین کمک را می‌کنم که محصول، طراحی و فنی باید با هم به یک تصمیم برسند. مسیر را مشخص می‌کنم، برای تیم قابل اجرا می‌کنم و هزینه فنی هر انتخاب را هم می‌فهمم.",
+      "دامنه مسئولیتم در هر پروژه فرق دارد، اما معمولاً فاصله میان نیاز اولیه کسب‌وکار و انتشار یک نسخه قابل استفاده را پوشش می‌دهم.",
     capabilityItems: [
-      ["فهم مسئله", "با کاربر حرف می‌زنم، کسب‌وکار را می‌شناسم و مسئله پشت درخواست اولیه را پیدا می‌کنم."],
-      ["انتخاب", "مشخص می‌کنم چه چیزی هسته محصول است، کدام کار به آن وابسته است و چه چیزی می‌تواند صبر کند."],
-      ["روشن کردن راه‌حل", "با طراحی مسیر و رابط واقعی، قبل از صرف زمان زیاد نشان می‌دهم دقیقاً قرار است چه چیزی ساخته شود."],
-      ["ساختن", "از فرانت‌اند، بک‌اند و تست فاصله نمی‌گیرم و تا انتشار کنار تیم می‌مانم."],
-      ["بازبینی و اصلاح", "رفتار واقعی محصول را می‌بینم، خطاها را پیدا می‌کنم و اگر نتیجه با فرض اولیه فرق داشت، مسیر را تغییر می‌دهم."],
+      ["تعریف مسئله", "با کاربر، کارفرما و اعضای تیم صحبت می‌کنم تا قبل از تعریف قابلیت، خود مسئله روشن باشد."],
+      ["محدوده و اولویت", "هسته محصول، وابستگی‌ها و ترتیب اجرا را مشخص می‌کنم و کارهای قابل تعویق را کنار می‌گذارم."],
+      ["طراحی و مستندات", "مسیر کاربر، رابط، نیازمندی‌ها و شرایط پذیرش را آماده می‌کنم تا برداشت تیم از کار یکسان باشد."],
+      ["اجرا", "با تیم‌های فرانت‌اند، بک‌اند و QA کار می‌کنم و هرجا لازم باشد در پیاده‌سازی هم نقش مستقیم دارم."],
+      ["تست و انتشار", "مسیرهای اصلی را تست می‌کنم، ایرادها را اولویت‌بندی می‌کنم و نتیجه را بعد از انتشار دوباره می‌سنجم."],
     ],
-    path: "مسیر کاری من",
+    path: "سابقه کاری",
     pathIntro:
-      "بعضی تاریخ‌ها هم‌پوشانی دارند؛ چون در کنار اداره شرکت و انجام پروژه‌های مشتری، محصولات خودم را هم می‌ساختم. مسیر کاری من واقعاً همین‌طور پیش رفته است.",
-    fullHistory: "دیدن سابقه کامل",
-    notes: "چیزهایی که با هزینه واقعی یاد گرفته‌ام",
+      "بعضی دوره‌ها هم‌زمان‌اند، چون در کنار اداره یک شرکت نرم‌افزاری و انجام پروژه‌های مشتری، محصولات خودم را هم توسعه می‌دادم.",
+    fullHistory: "سابقه کامل",
+    notes: "یادداشت‌های محصول",
     notesIntro:
-      "یادداشت‌های کوتاه از چیزهایی که در ساختن، قیمت‌گذاری، خراب کردن و دوباره درست کردن محصول یاد گرفته‌ام.",
+      "سه یادداشت درباره تصمیم‌هایی که در Apex و Vibe گرفته‌ام.",
     readNote: "خواندن یادداشت",
-    contactTitle: "دنبال کسی هستید که هم تصمیم محصول را بفهمد و هم اجرای آن را؟",
+    contactTitle: "ارتباط",
     contactBody:
-      "برای موقعیت‌های مدیریت فنی محصول، محصول هوش مصنوعی، مالکیت محصول و رهبری فرانت‌اند با نگاه محصول آماده همکاری هستم.",
-    workTitle: "پروژه‌ها، همان‌طور که واقعاً پیش رفتند.",
+      "برای موقعیت‌های شغلی ریموت و تعداد محدودی پروژه در زمینه محصول، تجربه کاربر و توسعه وب آماده همکاری هستم.",
+    workTitle: "پروژه‌های محصول",
     workIntro:
-      "در هر پروژه توضیح داده‌ام چرا محصول ساخته شد، خودم دقیقاً مسئول چه بودم، کدام تصمیم‌ها مهم بودند و برای قضاوت درباره کدام نتیجه هنوز زود است.",
-    viewCase: "دیدن جزئیات پروژه",
+      "در هر مطالعه موردی، مسئله، مسئولیت من، تصمیم‌های اصلی، نحوه اجرا و وضعیت فعلی پروژه آمده است.",
+    viewCase: "مشاهده پروژه",
     caseNav: [
       ["خلاصه", "brief"],
       ["چالش‌ها", "constraints"],
@@ -200,24 +202,107 @@ const copy = {
       designed: "طراحی‌شده",
       artifact: "جزئیات",
     },
-    thinkingTitle: "یادداشت‌هایی از تجربه ساختن محصول واقعی.",
+    thinkingTitle: "یادداشت‌های محصول",
     thinkingIntro:
-      "سه چیزی که از تصمیم‌های واقعی، کد، محدودیت‌های فنی و نتیجه کار یاد گرفته‌ام.",
-    aboutTitle: "از فرانت‌اند شروع کردم، اما کارم خیلی زود از کدنویسی فراتر رفت.",
+      "سه یادداشت بر اساس تجربه کار در Apex و Vibe.",
+    aboutTitle: "در سال‌های مختلف، هم توسعه‌دهنده بوده‌ام، هم مسئول محصول و هم مدیر یک شرکت نرم‌افزاری.",
     aboutBody: [
-      "کارم را با فرانت‌اند و طراحی تجربه کاربر شروع کردم، اما مسئولیتم به همان بخش محدود نماند. معمولاً من بودم که درباره چیزی که باید ساخته شود سؤال می‌کردم، مسیر کاربر را طراحی می‌کردم، ترتیب اجرا را می‌چیدم، با فرانت‌اند و بک‌اند به راه‌حل می‌رسیدم و نتیجه را تا تست و انتشار دنبال می‌کردم. ریسک‌های عملیاتی و حقوقی هم بخشی از همان تصمیم‌ها بودند.",
-      "بعدتر شرکت و محصولات خودم را ساختم. آنجا قیمت‌گذاری، گفت‌وگو با مشتری، پشتیبانی، زیرساخت، تصمیم‌های لانچ و مسئولیت نتیجه هم به کارم اضافه شد. امروز این مجموعه کارها را مدیریت فنی محصول می‌نامم. هنوز کد می‌زنم، چون کمک می‌کند تصمیم‌هایم از واقعیت فنی فاصله نگیرند.",
+      "کارم را با توسعه فرانت‌اند و طراحی تجربه کاربر شروع کردم. با بزرگ‌تر شدن مسئولیتم، تعریف قابلیت‌ها، اولویت‌بندی، طراحی مسیرهای کاربر، هماهنگی با بک‌اند، QA و آماده‌سازی انتشار هم به کارم اضافه شد.",
+      "بعدتر محصولات خودم را ساختم و یک شرکت نرم‌افزاری را اداره کردم. در آن دوره با قیمت‌گذاری، مذاکره با مشتری، پشتیبانی، زیرساخت و برنامه‌ریزی لانچ هم درگیر بودم. هنوز کد می‌زنم، به‌خصوص زمانی که حضور مستقیم فنی باعث تصمیم بهتر یا اجرای سریع‌تر می‌شود.",
     ],
     principles: "روش کاری من",
     principleItems: [
-      ["ارزش قبل از تعداد قابلیت‌ها", "نقشه راه باید اول از نتیجه اصلی کاربر محافظت کند، نه اینکه فقط قابلیت بیشتری جمع کند."],
-      ["شفافیت قبل از تشریفات", "سند، چارچوب و جلسه فقط وقتی ارزش دارند که تصمیم‌گیری یا تحویل کار را ساده‌تر کنند."],
-      ["اعتماد به کار پشت صحنه نیاز دارد", "ایمنی، رسیدگی، حریم خصوصی، پشتیبانی و اعتراض فقط چند صفحه در UI نیستند؛ باید برایشان فرایند واقعی وجود داشته باشد."],
-      ["واقعیت فنی مهم است", "همیشه مشخص می‌کنم چه چیزی فعال است، چه چیزی ساخته شده اما هنوز نتیجه‌اش معلوم نیست و چه چیزی فعلاً فقط در برنامه است."],
+      ["اولویت‌بندی", "ابتدا مسیر اصلی کاربر را مشخص می‌کنم و قابلیت‌های بعدی را بر اساس آن می‌چینم."],
+      ["مستندسازی", "از نیازمندی، فلو و شرایط پذیرش زمانی استفاده می‌کنم که تصمیم یا تحویل کار را روشن‌تر کنند."],
+      ["عملیات محصول", "رسیدگی، حریم خصوصی، پشتیبانی و اعتراض را بخشی از خود محصول می‌دانم، نه کاری برای بعد از لانچ."],
+      ["درگیری فنی", "بین قابلیت فعال، کار اجراشده اما هنوز اثبات‌نشده و چیزی که فعلاً در مرحله طراحی است تفاوت می‌گذارم."],
     ],
     education: "تحصیلات و زبان",
     educationBody:
       "MBA مدیریت فناوری (۱۴۰۵) با پژوهش درباره فناوری دیجیتال، نوآوری و بهره‌وری. کارشناسی معماری. نمره آیلتس ۷.۵؛ فارسی زبان مادری و انگلیسی در سطح حرفه‌ای.",
+  },
+} as const;
+
+const serviceCopy = {
+  en: {
+    eyebrow: "Services",
+    title: "Product, UX, and web development services",
+    intro: "I work on projects where the responsibility extends beyond implementation. Depending on the project, my role can include product definition, UX, frontend or full-stack development, testing, and release preparation.",
+    email: "Discuss a project",
+    work: "Review my work",
+    scopeLabel: "Types of work",
+    scopeTitle: "Projects I can take responsibility for",
+    services: [
+      ["New digital products", "Turning an early idea or business need into a defined scope, user flows, interface, technical plan, and working release."],
+      ["Business websites and platforms", "Designing and building multilingual websites, customer portals, dashboards, publishing systems, and internal operating tools."],
+      ["Existing product improvement", "Reviewing a product that is slow, confusing, incomplete, or difficult to maintain, then addressing the most important product and technical problems."],
+      ["Technical product support", "Supporting a founder or team with roadmap decisions, PRDs, UX, frontend leadership, QA, release planning, and coordination with developers."],
+    ],
+    ownershipLabel: "Responsibilities",
+    ownershipTitle: "What I can cover",
+    ownership: [
+      "Product discovery, scope, roadmap, and prioritization",
+      "User flows, UX/UI, prototypes, and design systems",
+      "Frontend development and, where appropriate, full-stack delivery",
+      "API requirements and coordination with backend teams",
+      "QA planning, defect triage, release checks, and documentation",
+      "Performance work, AI integration, and operating-cost review",
+    ],
+    evidenceLabel: "Relevant work",
+    evidenceTitle: "Examples with implementation details",
+    processLabel: "Working process",
+    processTitle: "A clear scope before a long commitment",
+    process: [
+      ["Initial conversation", "We discuss the business, users, current product, constraints, timing, and the result you need."],
+      ["Scope and proposal", "I review the available material and write down the work, responsibilities, deliverables, schedule, and assumptions."],
+      ["Delivery", "The work is divided into reviewable stages. Decisions, progress, risks, and changes remain documented."],
+      ["Release and handover", "I test the agreed journeys, support deployment, document the system, and hand over the work and access clearly."],
+    ],
+    modelsLabel: "Engagement",
+    models: ["Complete project", "Defined product or UX phase", "Fractional product support", "Audit and recovery work"],
+    contactLabel: "Project enquiry",
+    contactTitle: "What to include in your first message",
+    contactBody: "A short description of the business, what currently exists, the problem you want to solve, your preferred timing, and an approximate budget range are enough for an initial review.",
+  },
+  fa: {
+    eyebrow: "خدمات",
+    title: "مدیریت محصول، طراحی تجربه کاربر و توسعه وب",
+    intro: "در پروژه‌هایی کار می‌کنم که به ترکیبی از مدیریت محصول، طراحی و اجرا نیاز دارند. بسته به نیاز پروژه، مسئولیتم می‌تواند تعریف محصول، طراحی تجربه، توسعه فرانت‌اند یا Full-stack، تست و آماده‌سازی انتشار را شامل شود.",
+    email: "گفت‌وگو درباره پروژه",
+    work: "مشاهده پروژه‌ها",
+    scopeLabel: "نوع پروژه",
+    scopeTitle: "کارهایی که می‌توانم مسئولیتشان را بر عهده بگیرم",
+    services: [
+      ["محصول دیجیتال جدید", "تبدیل یک ایده اولیه یا نیاز کسب‌وکار به محدوده روشن، مسیرهای کاربر، رابط، برنامه فنی و یک نسخه قابل استفاده."],
+      ["وب‌سایت و پلتفرم کسب‌وکار", "طراحی و توسعه وب‌سایت چندزبانه، پنل مشتری، داشبورد، سیستم انتشار محتوا و ابزارهای داخلی شرکت."],
+      ["بهبود محصول موجود", "بررسی محصولی که کند، نامفهوم، ناقص یا دشوار برای نگهداری است و اصلاح مهم‌ترین مشکلات محصول و فنی آن."],
+      ["همراهی فنی در مدیریت محصول", "کمک به مدیر یا تیم در نقشه راه، PRD، طراحی تجربه، هدایت فرانت‌اند، QA، برنامه انتشار و هماهنگی با توسعه‌دهندگان."],
+    ],
+    ownershipLabel: "دامنه مسئولیت",
+    ownershipTitle: "بخش‌هایی که می‌توانم پوشش دهم",
+    ownership: [
+      "بررسی مسئله، تعیین محدوده، نقشه راه و اولویت‌بندی",
+      "مسیرهای کاربر، UX و UI، نمونه اولیه و سیستم طراحی",
+      "توسعه فرانت‌اند و در پروژه‌های مناسب، اجرای Full-stack",
+      "تعریف نیازمندی API و هماهنگی با تیم بک‌اند",
+      "برنامه QA، دسته‌بندی ایرادها، بررسی انتشار و مستندسازی",
+      "بهینه‌سازی سرعت، استفاده از AI و بررسی هزینه‌های عملیاتی",
+    ],
+    evidenceLabel: "پروژه‌های مرتبط",
+    evidenceTitle: "نمونه‌هایی همراه با جزئیات تصمیم و اجرا",
+    processLabel: "روش همکاری",
+    processTitle: "قبل از شروع بلندمدت، محدوده کار را روشن می‌کنیم",
+    process: [
+      ["گفت‌وگوی اولیه", "درباره کسب‌وکار، کاربران، وضعیت فعلی، محدودیت‌ها، زمان و نتیجه مورد انتظار صحبت می‌کنیم."],
+      ["محدوده و پیشنهاد", "اطلاعات موجود را بررسی می‌کنم و شرح کار، مسئولیت‌ها، خروجی‌ها، زمان‌بندی و فرض‌های پروژه را می‌نویسم."],
+      ["اجرا", "کار به بخش‌های قابل بررسی تقسیم می‌شود و تصمیم‌ها، پیشرفت، ریسک‌ها و تغییرات ثبت می‌شوند."],
+      ["انتشار و تحویل", "مسیرهای توافق‌شده را تست می‌کنم، در استقرار همراهی می‌کنم و مستندات، کد و دسترسی‌ها را روشن تحویل می‌دهم."],
+    ],
+    modelsLabel: "نوع همکاری",
+    models: ["اجرای کامل پروژه", "یک مرحله مشخص محصول یا UX", "همراهی پاره‌وقت با تیم محصول", "بررسی و اصلاح محصول موجود"],
+    contactLabel: "درخواست پروژه",
+    contactTitle: "در پیام اول چه اطلاعاتی لازم است؟",
+    contactBody: "یک توضیح کوتاه درباره کسب‌وکار، چیزی که الان وجود دارد، مسئله‌ای که می‌خواهید حل شود، زمان مورد نظر و حدود بودجه برای بررسی اولیه کافی است.",
   },
 } as const;
 
@@ -243,8 +328,9 @@ function Arrow({ locale, size = 18 }: { locale: Locale; size?: number }) {
   return locale === "fa" ? <ArrowLeft size={size} /> : <ArrowRight size={size} />;
 }
 
-export function Header({ locale }: { locale: Locale }) {
+export function Header({ locale, languagePath }: { locale: Locale; languagePath?: string }) {
   const c = copy[locale];
+  const languageHref = languagePath ? (locale === "fa" ? `/${languagePath}` : `/fa/${languagePath}`) : c.languageHref;
   return (
     <header className="site-header">
       <Link className="brand" href={href(locale)} aria-label={locale === "fa" ? "صفحه اصلی شاهین غنی‌زاده" : "Shahin Ghanizadeh home"}>
@@ -253,14 +339,14 @@ export function Header({ locale }: { locale: Locale }) {
       </Link>
       <nav className="desktop-nav" aria-label={locale === "fa" ? "ناوبری اصلی" : "Primary navigation"}>
         {c.nav.map(([label, path]) => <Link key={path} href={href(locale, path)}>{label}</Link>)}
-        <a className="language-link" href={c.languageHref}>{c.language}</a>
+        <a className="language-link" href={languageHref}>{c.language}</a>
         <a className="icon-link" href="/documents/shahin-ghanizadeh-resume.pdf" aria-label={c.resume} title={c.resume}><Download size={17} /></a>
       </nav>
       <details className="mobile-nav">
         <summary aria-label={locale === "fa" ? "باز کردن منو" : "Open menu"}><Menu size={20} /></summary>
         <div>
           {c.nav.map(([label, path]) => <Link key={path} href={href(locale, path)}>{label}</Link>)}
-          <a href={c.languageHref}>{c.language}</a>
+          <a href={languageHref}>{c.language}</a>
           <a href="/documents/shahin-ghanizadeh-resume.pdf">{c.resume}</a>
         </div>
       </details>
@@ -271,7 +357,7 @@ export function Header({ locale }: { locale: Locale }) {
 export function Footer({ locale }: { locale: Locale }) {
   return (
     <footer className="footer">
-      <div><strong>{locale === "fa" ? "شاهین غنی‌زاده" : "Shahin Ghanizadeh"}</strong><p>{locale === "fa" ? "مدیر فنی محصول و سازنده محصول" : "Technical product manager and product builder"}</p></div>
+      <div><strong>{locale === "fa" ? "شاهین غنی‌زاده" : "Shahin Ghanizadeh"}</strong><p>{locale === "fa" ? "مدیر فنی محصول و توسعه‌دهنده فرانت‌اند" : "Technical product manager and frontend engineer"}</p></div>
       <div className="footer-links">
         <a href="mailto:shahinghani@hotmail.com">Email</a>
         <a href="https://www.linkedin.com/in/shahinghanizadeh" target="_blank" rel="noreferrer">LinkedIn</a>
@@ -291,7 +377,10 @@ function Contact({ locale }: { locale: Locale }) {
         <h2>{c.contactTitle}</h2>
         <p>{c.contactBody}</p>
       </div>
-      <a className="button button-light" href="mailto:shahinghani@hotmail.com"><Mail size={18} />{c.contactCta}</a>
+      <div className="contact-actions">
+        <a className="button button-dark" href="mailto:shahinghani@hotmail.com"><Mail size={18} />{c.contactCta}</a>
+        <Link className="text-link" href={href(locale, "services")}>{locale === "fa" ? "اطلاعات همکاری پروژه‌ای" : "Project services"}<Arrow locale={locale} /></Link>
+      </div>
     </section>
   );
 }
@@ -344,19 +433,19 @@ export function HomePage({ locale }: { locale: Locale }) {
         <aside className="hero-note">
           <div className="availability"><span />{c.availability}</div>
           <p>{rtl
-            ? "این روزها Apex را به‌عنوان یک محصول زنده و درآمدزا اداره می‌کنم و هم‌زمان محصول، طراحی و فرانت‌اند Vibe را تا لانچ جلو می‌برم."
-            : "Right now I run Apex as a live, paid product while leading Vibe's product, design, and frontend toward launch."}</p>
+            ? "در حال حاضر Apex را اداره می‌کنم و همراه تیم Vibe روی آماده‌سازی نسخه عمومی کار می‌کنم."
+            : "I currently operate Apex and work with the Vibe team on its public-launch readiness."}</p>
         </aside>
       </section>
 
       <section className="work-window" aria-label={rtl ? "تصویری از محصولات" : "A look inside the products"}>
         <figure className="work-window-main">
           <img src="/projects/apex/new/app-dashboard.jpg" alt={rtl ? "داشبورد محصول Apex" : "Apex product dashboard"} />
-          <figcaption><span>Apex</span>{rtl ? "از منطق بازار تا محصول درآمدزا" : "From market logic to a paid product"}</figcaption>
+          <figcaption><span>Apex</span>{rtl ? "محصول تحلیل بازار؛ فعال و درآمدزا" : "Live, paid market-analysis product"}</figcaption>
         </figure>
         <figure>
           <img src="/projects/vibe/new/discovery-home.jpg" alt={rtl ? "صفحه کشف Vibe" : "Vibe discovery experience"} />
-          <figcaption><span>Vibe</span>{rtl ? "محصول، طراحی و فرانت‌اند از صفر" : "Product, design, and frontend from zero"}</figcaption>
+          <figcaption><span>Vibe</span>{rtl ? "پلتفرم بررسی کسب‌وکار؛ پیش از لانچ" : "Pre-launch business-review platform"}</figcaption>
         </figure>
       </section>
 
@@ -369,7 +458,7 @@ export function HomePage({ locale }: { locale: Locale }) {
         <div className="resilience-callout">
           <div><p className="kicker">04 · {local(projects.mrm.stage, locale)}</p><h2>{projects.mrm.title}</h2><p>{local(projects.mrm.headline, locale)}</p></div>
           <div><strong>{rtl ? "حدود ۴۰" : "~40"}</strong><span>{rtl ? "نفر از ابزار استفاده کردند تا اینترنت بازگشت" : "people used the tool until connectivity returned"}</span></div>
-          <Link className="button button-light" href={href(locale, "work/mrm")}>{c.viewCase}<Arrow locale={locale} /></Link>
+          <Link className="button button-plain" href={href(locale, "work/mrm")}>{c.viewCase}<Arrow locale={locale} /></Link>
         </div>
       </section>
 
@@ -408,6 +497,63 @@ export function WorkPage({ locale }: { locale: Locale }) {
         {projectSlugs.map(slug => <ProjectPreview key={slug} project={projects[slug]} locale={locale} compact={slug === "mrm"} />)}
       </section>
       <Contact locale={locale} />
+      <Footer locale={locale} />
+    </main>
+  );
+}
+
+export function ServicesPage({ locale }: { locale: Locale }) {
+  const s = serviceCopy[locale];
+  const rtl = locale === "fa";
+  const enquirySubject = encodeURIComponent(locale === "fa" ? "درخواست همکاری پروژه‌ای" : "Project enquiry");
+  const evidence: ProjectSlug[] = ["first-choice", "apex", "vibe"];
+
+  return (
+    <main lang={locale} dir={rtl ? "rtl" : "ltr"} className={rtl ? "rtl" : ""}>
+      <Header locale={locale} languagePath="services" />
+      <section className="service-hero">
+        <div>
+          <p className="kicker">{s.eyebrow}</p>
+          <h1>{s.title}</h1>
+          <p>{s.intro}</p>
+          <div className="actions">
+            <a className="button button-dark" href={`mailto:shahinghani@hotmail.com?subject=${enquirySubject}`}><Mail size={18} />{s.email}</a>
+            <Link className="button button-plain" href={href(locale, "work")}>{s.work}<Arrow locale={locale} /></Link>
+          </div>
+        </div>
+        <aside>
+          <p className="kicker">{s.modelsLabel}</p>
+          <ul>{s.models.map(item => <li key={item}>{item}</li>)}</ul>
+        </aside>
+      </section>
+
+      <section className="service-section">
+        <header><p className="kicker">{s.scopeLabel}</p><h2>{s.scopeTitle}</h2></header>
+        <div className="service-rows">{s.services.map(([title, body], index) => <article key={title}><span>0{index + 1}</span><h3>{title}</h3><p>{body}</p></article>)}</div>
+      </section>
+
+      <section className="service-section service-ownership">
+        <header><p className="kicker">{s.ownershipLabel}</p><h2>{s.ownershipTitle}</h2></header>
+        <ul>{s.ownership.map(item => <li key={item}><Check size={17} /><span>{item}</span></li>)}</ul>
+      </section>
+
+      <section className="service-section service-evidence">
+        <header><p className="kicker">{s.evidenceLabel}</p><h2>{s.evidenceTitle}</h2></header>
+        <div>{evidence.map(slug => {
+          const project = projects[slug];
+          return <Link key={slug} href={href(locale, `work/${slug}`)}>{project.cover && <img src={project.cover} alt={local(project.headline, locale)} />}<p className="kicker">{local(project.productType, locale)}</p><h3>{project.title}</h3><p>{local(project.deck, locale)}</p><span>{copy[locale].viewCase}<Arrow locale={locale} /></span></Link>;
+        })}</div>
+      </section>
+
+      <section className="service-section service-process">
+        <header><p className="kicker">{s.processLabel}</p><h2>{s.processTitle}</h2></header>
+        <ol>{s.process.map(([title, body], index) => <li key={title}><span>0{index + 1}</span><div><h3>{title}</h3><p>{body}</p></div></li>)}</ol>
+      </section>
+
+      <section className="service-contact">
+        <div><p className="kicker">{s.contactLabel}</p><h2>{s.contactTitle}</h2><p>{s.contactBody}</p></div>
+        <a className="button button-dark" href={`mailto:shahinghani@hotmail.com?subject=${enquirySubject}`}><Mail size={18} />{s.email}</a>
+      </section>
       <Footer locale={locale} />
     </main>
   );
