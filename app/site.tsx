@@ -7,7 +7,7 @@ import {
   Download,
   ExternalLink,
   Github,
-  Mail,
+  MessageCircle,
   Menu,
 } from "lucide-react";
 import {
@@ -39,7 +39,7 @@ const copy = {
       "My work usually starts with defining the problem and setting priorities, then continues through UX, technical coordination, QA, and release. On several products, I also built the frontend or the complete application.",
     availability: "Current work",
     workCta: "View projects",
-    contactCta: "Email me",
+    contactCta: "Discuss a project",
     selectedWork: "Selected work",
     selectedIntro:
       "Five products showing the scope of my work, the decisions I owned, and the current state of each project.",
@@ -63,9 +63,9 @@ const copy = {
     notesIntro:
       "Notes on decisions I have made in live and pre-launch products.",
     readNote: "Read note",
-    contactTitle: "Contact",
+    contactTitle: "Have a project in mind?",
     contactBody:
-      "I am available for remote product roles and selected product, UX, and web projects.",
+      "Send me a short message on WhatsApp about what you are building, what already exists, and where you need help.",
     workTitle: "Product work",
     workIntro:
       "Each case study covers the problem, my responsibilities, major decisions, implementation, and current status.",
@@ -139,7 +139,7 @@ const copy = {
       "کارم معمولاً از شناخت مسئله و تعیین اولویت شروع می‌شود و تا طراحی، هماهنگی با تیم فنی، تست و انتشار ادامه دارد. در چند محصول، فرانت‌اند یا کل برنامه را هم خودم ساخته‌ام.",
     availability: "کارهای فعلی",
     workCta: "مشاهده پروژه‌ها",
-    contactCta: "ارسال ایمیل",
+    contactCta: "گفت‌وگو در واتساپ",
     selectedWork: "پروژه‌های منتخب",
     selectedIntro:
       "این پنج پروژه بخش‌های مختلف کارم را نشان می‌دهند؛ از تعریف محصول و طراحی تا اجرا و اداره آن.",
@@ -163,9 +163,9 @@ const copy = {
     notesIntro:
       "سه یادداشت درباره تصمیم‌هایی که در Apex و Vibe گرفته‌ام.",
     readNote: "خواندن یادداشت",
-    contactTitle: "ارتباط",
+    contactTitle: "پروژه‌ای در ذهن دارید؟",
     contactBody:
-      "برای موقعیت‌های شغلی ریموت و تعداد محدودی پروژه در زمینه محصول، تجربه کاربر و توسعه وب آماده همکاری هستم.",
+      "در واتساپ یک توضیح کوتاه درباره کاری که می‌خواهید انجام دهید، وضعیت فعلی و کمکی که لازم دارید بفرستید.",
     workTitle: "پروژه‌های محصول",
     workIntro:
       "در هر مطالعه موردی، مسئله، مسئولیت من، تصمیم‌های اصلی، نحوه اجرا و وضعیت فعلی پروژه آمده است.",
@@ -229,7 +229,7 @@ const serviceCopy = {
     eyebrow: "Services",
     title: "Product, UX, and web development services",
     intro: "I work on projects where the responsibility extends beyond implementation. Depending on the project, my role can include product definition, UX, frontend or full-stack development, testing, and release preparation.",
-    email: "Discuss a project",
+    whatsapp: "Discuss a project on WhatsApp",
     work: "Review my work",
     scopeLabel: "Types of work",
     scopeTitle: "Projects I can take responsibility for",
@@ -269,7 +269,7 @@ const serviceCopy = {
     eyebrow: "خدمات",
     title: "مدیریت محصول، طراحی تجربه کاربر و توسعه وب",
     intro: "در پروژه‌هایی کار می‌کنم که به ترکیبی از مدیریت محصول، طراحی و اجرا نیاز دارند. بسته به نیاز پروژه، مسئولیتم می‌تواند تعریف محصول، طراحی تجربه، توسعه فرانت‌اند یا Full-stack، تست و آماده‌سازی انتشار را شامل شود.",
-    email: "گفت‌وگو درباره پروژه",
+    whatsapp: "گفت‌وگو درباره پروژه در واتساپ",
     work: "مشاهده پروژه‌ها",
     scopeLabel: "نوع پروژه",
     scopeTitle: "کارهایی که می‌توانم مسئولیتشان را بر عهده بگیرم",
@@ -317,6 +317,13 @@ function href(locale: Locale, path = "") {
   return `${root(locale)}${path ? `/${path}` : ""}` || "/";
 }
 
+function whatsappHref(locale: Locale) {
+  const message = locale === "fa"
+    ? "سلام شاهین، سایتت رو دیدم و می‌خوام درباره یه پروژه باهات صحبت کنم."
+    : "Hi Shahin, I found your portfolio and would like to discuss a project.";
+  return `https://wa.me/989381011212?text=${encodeURIComponent(message)}`;
+}
+
 function local<T extends { en: string; fa: string }>(value: T, locale: Locale) {
   return value[locale];
 }
@@ -360,6 +367,7 @@ export function Footer({ locale }: { locale: Locale }) {
     <footer className="footer">
       <div><strong>{locale === "fa" ? "شاهین غنی‌زاده" : "Shahin Ghanizadeh"}</strong><p>{locale === "fa" ? "مدیر فنی محصول و توسعه‌دهنده فرانت‌اند" : "Technical product manager and frontend engineer"}</p></div>
       <div className="footer-links">
+        <a href={whatsappHref(locale)} target="_blank" rel="noreferrer">WhatsApp</a>
         <a href="mailto:shahinghani@hotmail.com">Email</a>
         <a href="https://www.linkedin.com/in/shahinghanizadeh" target="_blank" rel="me noreferrer">LinkedIn</a>
         <a href="https://github.com/ShawnMcRich" target="_blank" rel="me noreferrer">GitHub</a>
@@ -380,7 +388,7 @@ function Contact({ locale }: { locale: Locale }) {
         <p>{c.contactBody}</p>
       </div>
       <div className="contact-actions">
-        <a className="button button-dark" href="mailto:shahinghani@hotmail.com"><Mail size={18} />{c.contactCta}</a>
+        <a className="button button-dark button-emphasis" href={whatsappHref(locale)} target="_blank" rel="noreferrer"><MessageCircle size={19} />{c.contactCta}</a>
         <Link className="text-link" href={href(locale, "services")}>{locale === "fa" ? "اطلاعات همکاری پروژه‌ای" : "Project services"}<Arrow locale={locale} /></Link>
       </div>
     </section>
@@ -428,8 +436,8 @@ export function HomePage({ locale }: { locale: Locale }) {
           <p className="hero-statement">{c.intro}</p>
           <p className="hero-support">{c.subintro}</p>
           <div className="actions">
-            <Link className="button button-dark" href={href(locale, "work")}>{c.workCta}<Arrow locale={locale} /></Link>
-            <a className="button button-plain" href="mailto:shahinghani@hotmail.com">{c.contactCta}</a>
+            <a className="button button-dark button-emphasis" href={whatsappHref(locale)} target="_blank" rel="noreferrer"><MessageCircle size={19} />{c.contactCta}</a>
+            <Link className="button button-plain" href={href(locale, "work")}>{c.workCta}<Arrow locale={locale} /></Link>
           </div>
         </div>
         <aside className="hero-note">
@@ -507,7 +515,6 @@ export function WorkPage({ locale }: { locale: Locale }) {
 export function ServicesPage({ locale }: { locale: Locale }) {
   const s = serviceCopy[locale];
   const rtl = locale === "fa";
-  const enquirySubject = encodeURIComponent(locale === "fa" ? "درخواست همکاری پروژه‌ای" : "Project enquiry");
   const evidence: ProjectSlug[] = ["first-choice", "hosseintalab", "apex", "vibe"];
 
   return (
@@ -519,7 +526,7 @@ export function ServicesPage({ locale }: { locale: Locale }) {
           <h1>{s.title}</h1>
           <p>{s.intro}</p>
           <div className="actions">
-            <a className="button button-dark" href={`mailto:shahinghani@hotmail.com?subject=${enquirySubject}`}><Mail size={18} />{s.email}</a>
+            <a className="button button-dark button-emphasis" href={whatsappHref(locale)} target="_blank" rel="noreferrer"><MessageCircle size={19} />{s.whatsapp}</a>
             <Link className="button button-plain" href={href(locale, "work")}>{s.work}<Arrow locale={locale} /></Link>
           </div>
         </div>
@@ -554,7 +561,7 @@ export function ServicesPage({ locale }: { locale: Locale }) {
 
       <section className="service-contact">
         <div><p className="kicker">{s.contactLabel}</p><h2>{s.contactTitle}</h2><p>{s.contactBody}</p></div>
-        <a className="button button-dark" href={`mailto:shahinghani@hotmail.com?subject=${enquirySubject}`}><Mail size={18} />{s.email}</a>
+        <a className="button button-dark button-emphasis" href={whatsappHref(locale)} target="_blank" rel="noreferrer"><MessageCircle size={19} />{s.whatsapp}</a>
       </section>
       <Footer locale={locale} />
     </main>

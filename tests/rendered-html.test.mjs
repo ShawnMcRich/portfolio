@@ -29,6 +29,8 @@ test("server-renders the English portfolio", async () => {
   assert.match(html, /شاهین غنی‌زاده/);
   assert.match(html, /شاهین غنی زاده/);
   assert.match(html, /https:\/\/www\.linkedin\.com\/in\/shahinghanizadeh/);
+  assert.match(html, /https:\/\/wa\.me\/989381011212/);
+  assert.match(html, /Discuss a project/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton/i);
 });
 
@@ -41,6 +43,8 @@ test("server-renders the Persian portfolio", async () => {
   assert.match(html, /پروژه‌های منتخب/);
   assert.match(html, /انتخاب اول/);
   assert.match(html, /حسین‌طلب/);
+  assert.match(html, /گفت‌وگو در واتساپ/);
+  assert.match(html, /https:\/\/wa\.me\/989381011212/);
 });
 
 test("server-renders the English services page", async () => {
@@ -50,6 +54,7 @@ test("server-renders the English services page", async () => {
   assert.match(html, /Product, UX, and web development services/);
   assert.match(html, /Projects I can take responsibility for/);
   assert.match(html, /First Choice/);
+  assert.match(html, /Discuss a project on WhatsApp/);
 });
 
 test("server-renders the Persian services page", async () => {
@@ -59,6 +64,7 @@ test("server-renders the Persian services page", async () => {
   assert.match(html, /مدیریت محصول، طراحی تجربه کاربر و توسعه وب/);
   assert.match(html, /کارهایی که می‌توانم مسئولیتشان را بر عهده بگیرم/);
   assert.match(html, /انتخاب اول/);
+  assert.match(html, /گفت‌وگو درباره پروژه در واتساپ/);
 });
 
 test("server-renders a deep case study", async () => {

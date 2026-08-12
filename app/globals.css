@@ -60,6 +60,7 @@ button, input, textarea, select { font: inherit; }
 .button-dark { background: var(--ink); color: #fff; }
 .button-light { background: #fff; color: var(--ink); border-color: #fff; }
 .button-plain { border-color: var(--line); background: transparent; }
+.button-emphasis { min-height: 52px; padding: 0 22px; }
 .text-link { display: inline-flex; align-items: center; gap: 8px; width: fit-content; padding-bottom: 5px; border-bottom: 1px solid currentColor; font-size: 14px; font-weight: 680; }
 .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 34px; }
 
@@ -482,6 +483,7 @@ button, input, textarea, select { font: inherit; }
   .notes-band a svg { grid-column: 3; grid-row: 1 / span 2; }
   .contact-band { min-height: 390px; padding: 65px 18px; flex-direction: column; justify-content: center; align-items: flex-start; }
   .contact-band h2 { font-size: 32px; }
+  .contact-actions .button-emphasis, .service-contact .button-emphasis { width: 100%; }
   .footer { padding: 42px 18px; grid-template-columns: 1fr; }
   .footer-links { flex-wrap: wrap; }
   .footer small { text-align: start; }
