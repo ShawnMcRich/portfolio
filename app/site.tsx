@@ -324,6 +324,12 @@ function whatsappHref(locale: Locale) {
   return `https://wa.me/989381011212?text=${encodeURIComponent(message)}`;
 }
 
+function resumeHref(locale: Locale) {
+  return locale === "fa"
+    ? "/documents/shahin-ghanizadeh-resume-fa.pdf"
+    : "/documents/shahin-ghanizadeh-resume.pdf";
+}
+
 function local<T extends { en: string; fa: string }>(value: T, locale: Locale) {
   return value[locale];
 }
@@ -348,14 +354,14 @@ export function Header({ locale, languagePath }: { locale: Locale; languagePath?
       <nav className="desktop-nav" aria-label={locale === "fa" ? "ناوبری اصلی" : "Primary navigation"}>
         {c.nav.map(([label, path]) => <Link key={path} href={href(locale, path)}>{label}</Link>)}
         <a className="language-link" href={languageHref}>{c.language}</a>
-        <a className="icon-link" href="/documents/shahin-ghanizadeh-resume.pdf" aria-label={c.resume} title={c.resume}><Download size={17} /></a>
+        <a className="icon-link" href={resumeHref(locale)} aria-label={c.resume} title={c.resume}><Download size={17} /></a>
       </nav>
       <details className="mobile-nav">
         <summary aria-label={locale === "fa" ? "باز کردن منو" : "Open menu"}><Menu size={20} /></summary>
         <div>
           {c.nav.map(([label, path]) => <Link key={path} href={href(locale, path)}>{label}</Link>)}
           <a href={languageHref}>{c.language}</a>
-          <a href="/documents/shahin-ghanizadeh-resume.pdf">{c.resume}</a>
+          <a href={resumeHref(locale)}>{c.resume}</a>
         </div>
       </details>
     </header>
@@ -723,7 +729,7 @@ export function AboutPage({ locale }: { locale: Locale }) {
       <section className="about-hero"><header className="about-heading"><img className="about-portrait" src="/shahin-ghanizadeh.jpg" width="1200" height="1200" alt={rtl ? "شاهین غنی‌زاده" : "Shahin Ghanizadeh"} /><p className="kicker">{rtl ? "درباره من" : "About"}</p><h1>{rtl ? "شاهین غنی‌زاده" : "Shahin Ghanizadeh"}</h1><p>{c.aboutTitle}</p></header><div>{c.aboutBody.map(paragraph => <p key={paragraph}>{paragraph}</p>)}</div></section>
       <section className="principles-band"><header><p className="kicker">{c.principles}</p></header><div>{c.principleItems.map(([title, body], index) => <article key={title}><span>0{index + 1}</span><h2>{title}</h2><p>{body}</p></article>)}</div></section>
       <section id="experience" className="content-section full-experience"><header className="section-heading"><div><p className="kicker">{c.path}</p><h2>{c.pathIntro}</h2></div></header><div className="timeline">{experience.map(item => <article key={item.company}><time>{local(item.period, locale)}</time><div><h3>{local(item.title, locale)}</h3><strong>{item.company}</strong><p>{local(item.summary, locale)}</p></div></article>)}</div></section>
-      <section className="education-band"><p className="kicker">{c.education}</p><p>{c.educationBody}</p><a className="button button-dark" href="/documents/shahin-ghanizadeh-resume.pdf"><Download size={18} />{c.resume}</a></section>
+      <section className="education-band"><p className="kicker">{c.education}</p><p>{c.educationBody}</p><a className="button button-dark" href={resumeHref(locale)}><Download size={18} />{c.resume}</a></section>
       <Contact locale={locale} />
       <Footer locale={locale} />
     </main>
