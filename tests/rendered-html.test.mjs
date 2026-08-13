@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
 import test from "node:test";
 
 async function render(path = "/") {
@@ -107,6 +108,21 @@ test("about page declares Shahin as the profile page subject", async () => {
   assert.match(html, /About Shahin Ghanizadeh/);
   assert.match(html, /ProfilePage/);
   assert.match(html, /profile-page-structured-data/);
+  assert.match(html, /dateCreated\\?\":\\?\"2026-07-31T00:00:00\+03:30/);
+  assert.match(html, /dateModified\\?\":\\?\"2026-08-13T00:00:00\+03:30/);
+});
+
+test("static deployment includes crawler-facing SEO files", async () => {
+  const [sitemap, robots] = await Promise.all([
+    readFile(new URL("../dist/client/sitemap.xml", import.meta.url), "utf8"),
+    readFile(new URL("../dist/client/robots.txt", import.meta.url), "utf8"),
+  ]);
+
+  assert.match(sitemap, /<urlset/);
+  assert.match(sitemap, /https:\/\/shahinghanizadeh\.ir\/work\/apex/);
+  assert.match(sitemap, /https:\/\/shahinghanizadeh\.ir\/fa\/work\/apex/);
+  assert.match(sitemap, /hreflang="x-default"/);
+  assert.match(robots, /Sitemap: https:\/\/shahinghanizadeh\.ir\/sitemap\.xml/);
 });
 
 test("sitemap includes bilingual case studies and product notes", async () => {

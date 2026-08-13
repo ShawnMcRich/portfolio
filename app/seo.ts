@@ -76,8 +76,8 @@ export function profilePageJsonLd(locale: "en" | "fa") {
     inLanguage: locale,
     mainEntity: { "@id": PERSON_ID },
     isPartOf: { "@id": SITE_ID },
-    dateCreated: "2026-07-31",
-    dateModified: "2026-08-12",
+    dateCreated: "2026-07-31T00:00:00+03:30",
+    dateModified: "2026-08-13T00:00:00+03:30",
   };
 }
 
