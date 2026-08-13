@@ -307,7 +307,7 @@ const serviceCopy = {
   },
 } as const;
 
-const featured: ProjectSlug[] = ["apex", "vibe", "first-choice", "hosseintalab"];
+const featured: ProjectSlug[] = ["apex", "vibe", "first-choice", "hosseintalab", "mrm"];
 
 function root(locale: Locale) {
   return locale === "fa" ? "/fa" : "";
@@ -465,11 +465,6 @@ export function HomePage({ locale }: { locale: Locale }) {
           <Link className="text-link" href={href(locale, "work")}>{c.allWork}<Arrow locale={locale} /></Link>
         </header>
         <div className="project-stack">{featured.map(slug => <ProjectPreview key={slug} project={projects[slug]} locale={locale} />)}</div>
-        <div className="resilience-callout">
-          <div><p className="kicker">05 · {local(projects.mrm.stage, locale)}</p><h2>{projects.mrm.title}</h2><p>{local(projects.mrm.headline, locale)}</p></div>
-          <div><strong>{rtl ? "حدود ۴۰" : "~40"}</strong><span>{rtl ? "نفر از ابزار استفاده کردند تا اینترنت بازگشت" : "people used the tool until connectivity returned"}</span></div>
-          <Link className="button button-plain" href={href(locale, "work/mrm")}>{c.viewCase}<Arrow locale={locale} /></Link>
-        </div>
       </section>
 
       <section className="method-band">

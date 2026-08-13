@@ -404,6 +404,7 @@ export const projects: Record<ProjectSlug, Project> = {
     deck: t("MRM is a self-hosted company messenger I scoped, designed, built, and deployed during the shutdown. Around 40 people used it until normal access returned.", "MRM یک پیام‌رسان داخلی و خودمیزبان است که همان روزهای قطعی تعریف، طراحی، ساخته و راه‌اندازی کردم. حدود ۴۰ نفر تا برگشت اینترنت از آن استفاده کردند."),
     role: t("Product Owner · Designer · Engineer · Operator", "مالک محصول · طراح · توسعه‌دهنده · مسئول راه‌اندازی"),
     team: t("Built for and adopted by an approximately 40-person company", "برای یک شرکت حدود ۴۰ نفره ساختم و همان تیم از آن استفاده کرد"),
+    cover: "/projects/mrm/restricted-network-workspace.png",
     links: [{ label: t("GitHub", "گیت هاب"), href: "https://github.com/ShawnMcRich/MRM" }],
     metrics: [
       { value: t("~40 people", "حدود ۴۰ نفر"), label: t("kept coordinating during the shutdown", "در زمان قطعی با هم در ارتباط ماندند") },

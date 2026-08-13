@@ -144,3 +144,11 @@ test("server-renders the launched Hossein Talab case study", async () => {
   assert.match(html, /نمایش قیمت پیش از تماس/);
   assert.match(html, /https:\/\/hosseintalab\.ir/);
 });
+
+test("server-renders MRM with its product visual", async () => {
+  const response = await render("/work/mrm");
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  assert.match(html, /restricted-network-workspace\.png/);
+  assert.match(html, /approximately 40-person company/);
+});
