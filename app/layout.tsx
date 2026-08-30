@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: { default: PERSON_NAME, template: `%s | ${PERSON_NAME}` },
   description:
-    "Official portfolio of Shahin Ghanizadeh, a technical product manager, product designer, and senior frontend engineer working across product strategy, UX, AI, delivery, QA, and release.",
+    "Official portfolio of Shahin Ghanizadeh, a Senior Technical Product Manager leading AI and digital products from problem definition through technical delivery, launch, and operation.",
   applicationName: "Shahin Ghanizadeh Portfolio",
   authors: [{ name: PERSON_NAME, url: "/about" }],
   creator: PERSON_NAME,
@@ -41,16 +41,16 @@ export const metadata: Metadata = {
     siteName: "Shahin Ghanizadeh",
     locale: "en_US",
     alternateLocale: ["fa_IR"],
-    title: "Shahin Ghanizadeh | Technical Product Manager",
+    title: "Shahin Ghanizadeh | Senior Technical Product Manager",
     description:
-      "Product strategy, product design, frontend engineering, applied AI, and evidence from products taken into real use.",
+      "Product strategy, roadmaps, requirements, UX, technical delivery, QA, launch, and evidence from products taken into real use.",
     url: SITE_URL,
     images: [{ url: "/og.png", width: 1200, height: 630, alt: "Shahin Ghanizadeh - Technical Product Manager" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shahin Ghanizadeh | Technical Product Manager",
-    description: "Product strategy, UX, applied AI, frontend engineering, QA, and launch work with evidence from real products.",
+    title: "Shahin Ghanizadeh | Senior Technical Product Manager",
+    description: "Product strategy, roadmaps, requirements, technical delivery, QA, launch, and evidence from real products.",
     images: ["/og.png"],
   },
 };

@@ -33,31 +33,31 @@ const copy = {
     language: "FA",
     languageHref: "/fa",
     resume: "Download résumé",
-    role: "Technical Product Manager · Product Designer · Senior Frontend Engineer",
-    intro: "I work across product management, product design, and frontend engineering.",
+    role: "Senior Technical Product Manager",
+    intro: "I lead technically complex products from an unclear problem to a working release.",
     subintro:
-      "My work usually starts with defining the problem and setting priorities, then continues through UX, technical coordination, QA, and release. On several products, I also built the frontend or the complete application.",
-    availability: "Current work",
-    workCta: "View projects",
+      "My work covers product strategy, roadmaps, requirements, UX, technical delivery, QA, launch, and production improvement. A senior frontend and product-design background helps me make decisions that teams can actually implement.",
+    availability: "Current product work",
+    workCta: "View product case studies",
     contactCta: "Discuss a project",
     selectedWork: "Selected work",
     selectedIntro:
-      "Five products showing the scope of my work, the decisions I owned, and the current state of each project.",
+      "Five case studies showing how I define product problems, make trade-offs, lead technical delivery, and measure what shipped.",
     allWork: "All projects",
     proof: "The short version",
-    capabilities: "What I do in a product team",
+    capabilities: "What I own as a Technical Product Manager",
     capabilitiesIntro:
-      "My responsibilities vary by project, but they usually cover the work between an initial business need and a tested release.",
+      "The work changes by product, but my responsibility is consistent: create clarity, make the important calls, and keep delivery connected to the user and business outcome.",
     capabilityItems: [
-      ["Problem definition", "Speak with users and stakeholders, understand the business, and define the problem before committing to a feature."],
-      ["Scope and priority", "Separate the product core from later work, identify dependencies, and set an executable order."],
-      ["UX and specification", "Prepare user flows, interfaces, requirements, and acceptance criteria so the team can work from the same understanding."],
-      ["Delivery", "Work directly with frontend, backend, and QA; contribute to implementation when the project needs it."],
-      ["Release and review", "Test the main journeys, classify defects, support release, and revise decisions when the evidence changes."],
+      ["Product direction", "Clarify the user problem, business value, constraints, and the outcome the product should create."],
+      ["Roadmap and priority", "Sequence bets, dependencies, and trade-offs so the team knows what matters now and what can wait."],
+      ["Requirements and UX", "Turn decisions into PRDs, user flows, interfaces, user stories, and acceptance criteria the team can act on."],
+      ["Technical delivery", "Work directly with design, frontend, backend, and QA on API contracts, dependencies, risks, and implementation choices."],
+      ["Release and learning", "Lead critical-path QA, defect triage, release readiness, and post-launch review against product evidence and KPIs."],
     ],
     path: "Experience",
     pathIntro:
-      "Some periods overlap because I built my own products while running a software company and delivering client work.",
+      "Product leadership across AI, marketplaces, internal operations, and client delivery.",
     fullHistory: "Full experience",
     notes: "Product notes",
     notesIntro:
@@ -106,10 +106,10 @@ const copy = {
     thinkingTitle: "Product notes",
     thinkingIntro:
       "Three notes based on work in Apex and Vibe.",
-    aboutTitle: "My work has covered engineering, product, and company operations.",
+    aboutTitle: "Senior Technical Product Manager with 10 years across product, UX, and software engineering.",
     aboutBody: [
-      "I started in frontend engineering and UX. As my responsibilities grew, I also took ownership of feature definition, prioritization, user flows, coordination with backend teams, QA, and release readiness.",
-      "I later founded products and managed a software company. That added pricing, customer conversations, support, infrastructure, launch planning, and day-to-day operating decisions to my work. I continue to write code, particularly when direct technical involvement helps the team move faster or make a better decision.",
+      "I have taken AI, marketplace, real-estate, commerce, and internal-operations products from problem definition and roadmap through requirements, implementation, QA, launch, and production support.",
+      "My engineering background lets me work directly with designers and engineers, surface constraints early, and stay close to delivery without reducing product management to ticket administration. I still contribute to UX and code when that involvement materially improves the product.",
     ],
     principles: "How I tend to work",
     principleItems: [
@@ -133,31 +133,31 @@ const copy = {
     language: "EN",
     languageHref: "/",
     resume: "دانلود رزومه",
-    role: "مدیر فنی محصول · طراح محصول · توسعه‌دهنده ارشد فرانت‌اند",
-    intro: "در مدیریت محصول، طراحی تجربه کاربر و توسعه فرانت‌اند کار می‌کنم.",
+    role: "مدیر ارشد محصول فنی",
+    intro: "کار من این است که یک مسئله مبهم را روشن کنم، اولویت‌ها را مشخص کنم و محصول را تا نسخه قابل استفاده جلو ببرم.",
     subintro:
-      "کارم معمولاً از شناخت مسئله و تعیین اولویت شروع می‌شود و تا طراحی، هماهنگی با تیم فنی، تست و انتشار ادامه دارد. در چند محصول، فرانت‌اند یا کل برنامه را هم خودم ساخته‌ام.",
-    availability: "کارهای فعلی",
-    workCta: "مشاهده پروژه‌ها",
+      "از استراتژی و نقشه راه تا نیازمندی‌ها، UX، هماهنگی تیم فنی، QA، لانچ و بهبود نسخه فعال را دنبال می‌کنم. سابقه فرانت‌اند و طراحی محصول کمک می‌کند تصمیم‌هایم با واقعیت اجرا فاصله نداشته باشند.",
+    availability: "فعالیت فعلی",
+    workCta: "مشاهده مطالعات موردی",
     contactCta: "گفت‌وگو در واتساپ",
     selectedWork: "پروژه‌های منتخب",
     selectedIntro:
-      "این پنج پروژه بخش‌های مختلف کارم را نشان می‌دهند؛ از تعریف محصول و طراحی تا اجرا و اداره آن.",
+      "این پنج مطالعه موردی نشان می‌دهند مسئله را چطور تعریف می‌کنم، چه تصمیم‌هایی می‌گیرم و محصول را چطور تا اجرا و نتیجه جلو می‌برم.",
     allWork: "مشاهده همه پروژه‌ها",
     proof: "خلاصه ماجرا",
-    capabilities: "کاری که در یک تیم محصول انجام می‌دهم",
+    capabilities: "مسئولیت من به‌عنوان مدیر محصول فنی",
     capabilitiesIntro:
-      "دامنه مسئولیتم در هر پروژه فرق دارد، اما معمولاً فاصله میان نیاز اولیه کسب‌وکار و انتشار یک نسخه قابل استفاده را پوشش می‌دهم.",
+      "جزئیات کار در هر محصول فرق دارد، اما مسئولیت اصلی من روشن است: کم کردن ابهام، گرفتن تصمیم‌های مهم و وصل نگه داشتن اجرا به نیاز کاربر و هدف کسب‌وکار.",
     capabilityItems: [
-      ["تعریف مسئله", "با کاربر، کارفرما و اعضای تیم صحبت می‌کنم تا قبل از تعریف قابلیت، خود مسئله روشن باشد."],
-      ["محدوده و اولویت", "هسته محصول، وابستگی‌ها و ترتیب اجرا را مشخص می‌کنم و کارهای قابل تعویق را کنار می‌گذارم."],
-      ["طراحی و مستندات", "مسیر کاربر، رابط، نیازمندی‌ها و شرایط پذیرش را آماده می‌کنم تا برداشت تیم از کار یکسان باشد."],
-      ["اجرا", "با تیم‌های فرانت‌اند، بک‌اند و QA کار می‌کنم و هرجا لازم باشد در پیاده‌سازی هم نقش مستقیم دارم."],
-      ["تست و انتشار", "مسیرهای اصلی را تست می‌کنم، ایرادها را اولویت‌بندی می‌کنم و نتیجه را بعد از انتشار دوباره می‌سنجم."],
+      ["جهت محصول", "مسئله کاربر، ارزش کسب‌وکار، محدودیت‌ها و نتیجه‌ای را که محصول باید بسازد روشن می‌کنم."],
+      ["نقشه راه و اولویت", "قابلیت‌ها، وابستگی‌ها و انتخاب‌های سخت را طوری مرتب می‌کنم که تیم بداند الان چه چیزی مهم است و چه چیزی می‌تواند صبر کند."],
+      ["نیازمندی و UX", "تصمیم‌ها را به PRD، مسیر کاربر، رابط، User Story و شرایط پذیرش قابل اجرا تبدیل می‌کنم."],
+      ["تحویل فنی", "با طراحی، فرانت‌اند، بک‌اند و QA روی قرارداد API، وابستگی‌ها، ریسک‌ها و انتخاب‌های اجرایی مستقیم کار می‌کنم."],
+      ["انتشار و یادگیری", "QA مسیرهای اصلی، اولویت‌بندی ایرادها، آمادگی انتشار و بررسی نتیجه بر اساس شواهد محصول و KPIها را جلو می‌برم."],
     ],
     path: "سابقه کاری",
     pathIntro:
-      "بعضی دوره‌ها هم‌زمان‌اند، چون در کنار اداره یک شرکت نرم‌افزاری و انجام پروژه‌های مشتری، محصولات خودم را هم توسعه می‌دادم.",
+      "رهبری محصول در پروژه‌های هوش مصنوعی، مارکت‌پلیس، ابزارهای داخلی و محصولات مشتری.",
     fullHistory: "سابقه کامل",
     notes: "یادداشت‌های محصول",
     notesIntro:
@@ -206,10 +206,10 @@ const copy = {
     thinkingTitle: "یادداشت‌های محصول",
     thinkingIntro:
       "سه یادداشت بر اساس تجربه کار در Apex و Vibe.",
-    aboutTitle: "در سال‌های مختلف، هم توسعه‌دهنده بوده‌ام، هم مسئول محصول و هم مدیر یک شرکت نرم‌افزاری.",
+    aboutTitle: "مدیر ارشد محصول فنی با ده سال سابقه در محصول، UX و مهندسی نرم‌افزار.",
     aboutBody: [
-      "کارم را با توسعه فرانت‌اند و طراحی تجربه کاربر شروع کردم. با بزرگ‌تر شدن مسئولیتم، تعریف قابلیت‌ها، اولویت‌بندی، طراحی مسیرهای کاربر، هماهنگی با بک‌اند، QA و آماده‌سازی انتشار هم به کارم اضافه شد.",
-      "بعدتر محصولات خودم را ساختم و یک شرکت نرم‌افزاری را اداره کردم. در آن دوره با قیمت‌گذاری، مذاکره با مشتری، پشتیبانی، زیرساخت و برنامه‌ریزی لانچ هم درگیر بودم. هنوز کد می‌زنم، به‌خصوص زمانی که حضور مستقیم فنی باعث تصمیم بهتر یا اجرای سریع‌تر می‌شود.",
+      "در پروژه‌های هوش مصنوعی، مارکت‌پلیس، املاک، فروش آنلاین و ابزارهای داخلی، کار را از روشن کردن مسئله و چیدن نقشه راه تا تعریف نیازمندی، اجرا، QA، انتشار و پشتیبانی نسخه واقعی جلو برده‌ام.",
+      "سابقه فنی‌ام کمک می‌کند با طراح و برنامه‌نویس مستقیم و دقیق کار کنم، محدودیت‌ها را زودتر ببینم و تا رسیدن محصول به نسخه قابل استفاده کنار تیم بمانم. وقتی لازم باشد در UX یا کد هم نقش مستقیم می‌گیرم، اما مسئولیت اصلی‌ام تصمیم‌های محصول و پیش بردن تحویل است.",
     ],
     principles: "روش کاری من",
     principleItems: [
@@ -371,7 +371,7 @@ export function Header({ locale, languagePath }: { locale: Locale; languagePath?
 export function Footer({ locale }: { locale: Locale }) {
   return (
     <footer className="footer">
-      <div><strong>{locale === "fa" ? "شاهین غنی‌زاده" : "Shahin Ghanizadeh"}</strong><p>{locale === "fa" ? "مدیر فنی محصول و توسعه‌دهنده فرانت‌اند" : "Technical product manager and frontend engineer"}</p></div>
+      <div><strong>{locale === "fa" ? "شاهین غنی‌زاده" : "Shahin Ghanizadeh"}</strong><p>{locale === "fa" ? "مدیر ارشد محصول فنی با سابقه طراحی و مهندسی نرم‌افزار" : "Senior Technical Product Manager with a background in product design and software engineering"}</p></div>
       <div className="footer-links">
         <a href={whatsappHref(locale)} target="_blank" rel="noreferrer">WhatsApp</a>
         <a href="mailto:shahinghani@hotmail.com">Email</a>
@@ -442,8 +442,8 @@ export function HomePage({ locale }: { locale: Locale }) {
           <p className="hero-statement">{c.intro}</p>
           <p className="hero-support">{c.subintro}</p>
           <div className="actions">
-            <a className="button button-dark button-emphasis" href={whatsappHref(locale)} target="_blank" rel="noreferrer"><MessageCircle size={19} />{c.contactCta}</a>
-            <Link className="button button-plain" href={href(locale, "work")}>{c.workCta}<Arrow locale={locale} /></Link>
+            <Link className="button button-dark button-emphasis" href={href(locale, "work")}>{c.workCta}<Arrow locale={locale} /></Link>
+            <a className="button button-plain" href={resumeHref(locale)}><Download size={18} />{c.resume}</a>
           </div>
         </div>
         <aside className="hero-note">
@@ -704,7 +704,7 @@ export function ThoughtPage({ locale, slug }: { locale: Locale; slug: NoteSlug }
           <div>
             <p className="kicker">{rtl ? "نویسنده" : "Author"}</p>
             <strong>{rtl ? "شاهین غنی‌زاده" : "Shahin Ghanizadeh"}</strong>
-            <p>{rtl ? "مدیر فنی محصول، طراح محصول و توسعه‌دهنده ارشد فرانت‌اند" : "Technical product manager, product designer, and senior frontend engineer"}</p>
+            <p>{rtl ? "مدیر ارشد محصول فنی با سابقه طراحی و مهندسی نرم‌افزار" : "Senior Technical Product Manager with a background in product design and software engineering"}</p>
             <Link className="text-link" href={href(locale, "about")}>{rtl ? "درباره من" : "About Shahin"}<Arrow locale={locale} /></Link>
           </div>
           <Link className="thought-project" href={href(locale, `work/${note.project}`)}>

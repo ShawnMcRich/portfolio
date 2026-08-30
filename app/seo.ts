@@ -30,12 +30,8 @@ export const personJsonLd = {
     absoluteUrl("/shahin-ghanizadeh-16x9.jpg"),
   ],
   description:
-    "Technical Product Manager, product designer, and senior frontend engineer with experience taking digital products from problem definition through release and operation.",
-  jobTitle: [
-    "Technical Product Manager",
-    "Product Designer",
-    "Senior Frontend Engineer",
-  ],
+    "Senior Technical Product Manager with 10 years across product, UX, and software engineering, leading digital products from problem definition through launch and operation.",
+  jobTitle: "Senior Technical Product Manager",
   knowsAbout: [
     "Technical product management",
     "Product strategy",
@@ -71,8 +67,8 @@ export function profilePageJsonLd(locale: "en" | "fa") {
     name: locale === "fa" ? `درباره ${PERSON_NAME_FA}` : `About ${PERSON_NAME}`,
     description:
       locale === "fa"
-        ? `پروفایل حرفه‌ای ${PERSON_NAME_FA}، مدیر فنی محصول، طراح محصول و توسعه‌دهنده ارشد فرانت‌اند.`
-        : `Professional profile of ${PERSON_NAME}, a technical product manager, product designer, and senior frontend engineer.`,
+        ? `پروفایل حرفه‌ای ${PERSON_NAME_FA}، مدیر ارشد محصول فنی با سابقه طراحی و مهندسی نرم‌افزار.`
+        : `Professional profile of ${PERSON_NAME}, a Senior Technical Product Manager with a background in product design and software engineering.`,
     inLanguage: locale,
     mainEntity: { "@id": PERSON_ID },
     isPartOf: { "@id": SITE_ID },

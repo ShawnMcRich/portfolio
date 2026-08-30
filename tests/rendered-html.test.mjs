@@ -20,7 +20,7 @@ test("server-renders the English portfolio", async () => {
   const html = await response.text();
   assert.match(html, /Shahin Ghanizadeh/);
   assert.match(html, /Technical Product Manager/);
-  assert.match(html, /View projects/);
+  assert.match(html, /View product case studies/);
   assert.match(html, /Apex/);
   assert.match(html, /Vibe/);
   assert.match(html, /First Choice/);
@@ -40,7 +40,7 @@ test("server-renders the Persian portfolio", async () => {
   assert.equal(response.status, 200);
   const html = await response.text();
   assert.match(html, /شاهین/);
-  assert.match(html, /مدیر فنی محصول/);
+  assert.match(html, /مدیر ارشد محصول فنی/);
   assert.match(html, /پروژه‌های منتخب/);
   assert.match(html, /انتخاب اول/);
   assert.match(html, /حسین‌طلب/);
