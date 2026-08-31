@@ -470,33 +470,42 @@ export const projectSlugs = Object.keys(projects) as ProjectSlug[];
 
 export const experience = [
   {
+    period: t("2026-present", "۱۴۰۵ تا امروز"),
+    title: t("Senior Technical Product Manager", "مدیر ارشد محصول فنی"),
+    company: t("UAE Proptech Venture", "پروژه فناوری املاک در امارات"),
+    summary: t(
+      "Leading discovery, a traceable PRD, architecture decisions, compliance constraints, KPI design, and a 5-epic, 58-ticket backlog for a voice-first AI lead-qualification platform.",
+      "پایه یک محصول Voice AI برای ارزیابی سرنخ‌های املاک را جلو می‌برم؛ از تحقیق ۴۲ نفره و PRD قابل ردگیری تا تصمیم‌های معماری، الزامات قانونی، KPI و بک‌لاگ ۵ دسته اصلی و ۵۸ کار مشخص.",
+    ),
+  },
+  {
     period: t("2025-present", "۱۴۰۴ تا امروز"),
     title: t("AI Product Manager", "مدیر محصول هوش مصنوعی"),
-    company: "Apex",
+    company: t("Apex", "Apex"),
     summary: t("Built and operate a live, monetized market-intelligence product across strategy, algorithms, UX, engineering, pricing, and production.", "Apex را از الگوریتم‌های اولیه تا محصول فعال و درآمدزا ساختم و امروز استراتژی، طراحی، تصمیم‌های فنی، قیمت‌گذاری و عملیاتش را اداره می‌کنم."),
   },
   {
     period: t("2023-present", "۱۴۰۲ تا امروز"),
     title: t("Technical Product Lead & Senior Frontend Engineer", "رهبر فنی محصول و توسعه‌دهنده ارشد فرانت‌اند"),
-    company: "Vibe",
+    company: t("Vibe", "Vibe"),
     summary: t("Defined the product, designed the full RTL experience, built the frontend, and led cross-functional delivery and launch readiness.", "ایده و نقشه راه محصول را شکل دادم، تمام UX و فرانت‌اند RTL را از صفر ساختم و هماهنگی تیم‌ها و آماده‌سازی برای لانچ را جلو بردم."),
   },
   {
     period: t("2020-2024", "۱۳۹۹ تا ۱۴۰۳"),
     title: t("Managing Director & Product Delivery Lead", "مدیر اجرایی و رهبر تحویل محصول"),
-    company: "Monorro",
+    company: t("Monorro", "Monorro"),
     summary: t("Led a software-services company across client discovery, scoping, proposals, delivery coordination, quality, and executive operations.", "شرکت خدمات نرم‌افزاری Monorro را اداره کردم؛ از مذاکره و تعریف پروژه تا هماهنگی اجرا، کنترل کیفیت و کارهای اجرایی شرکت."),
   },
   {
     period: t("2019-2023", "۱۳۹۸ تا ۱۴۰۲"),
     title: t("Product Lead (Independent Product)", "رهبر محصول مستقل"),
-    company: "MonoCoin",
+    company: t("MonoCoin", "MonoCoin"),
     summary: t("Built a paid signal and automation product using Pine Script, TradingView webhooks, Telegram, and Cornix for 300+ paying members and a 13,000+ audience.", "یک محصول اشتراکی سیگنال و اتوماسیون معامله ساختم که با Pine Script، وب‌هوک TradingView، تلگرام و Cornix کار می‌کرد و بیش از ۳۰۰ عضو پرداخت‌کننده داشت."),
   },
   {
     period: t("2016-2021", "۱۳۹۵ تا ۱۴۰۰"),
     title: t("Frontend Engineer & Product Contributor", "توسعه‌دهنده فرانت‌اند و همکار محصول"),
-    company: "The Pol / Beshknow · Independent",
+    company: t("The Pol / Beshknow · Independent", "The Pol / Beshknow · پروژه‌های مستقل"),
     summary: t("Built web experiences and contributed product and UX thinking to an in-store music platform, client products, and independent market-analysis tools.", "برای یک پلتفرم موسیقی داخل فروشگاه، پروژه‌های مشتری و ابزارهای تحلیل بازار، تجربه وب ساختم و در تصمیم‌های محصول و UX هم نقش داشتم."),
   },
 ];

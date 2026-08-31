@@ -5,7 +5,7 @@ import { AboutPage } from "../../site";
 export const metadata: Metadata = {
   title: "درباره شاهین غنی‌زاده",
   description:
-    "درباره شاهین غنی‌زاده، مدیر ارشد محصول فنی با ده سال سابقه در محصول، UX و مهندسی نرم‌افزار و تجربه کار روی محصولات هوش مصنوعی، مارکت‌پلیس و ابزارهای عملیاتی.",
+    "درباره شاهین غنی‌زاده، مدیر ارشد محصول فنی با تمرکز بر محصولات هوش مصنوعی و ده سال سابقه در محصول، UX و مهندسی نرم‌افزار.",
   alternates: { canonical: "/fa/about", languages: { en: "/about", fa: "/fa/about" } },
   openGraph: {
     type: "profile",
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     url: "/fa/about",
     locale: "fa_IR",
     title: "درباره شاهین غنی‌زاده",
-    description: "مدیر ارشد محصول فنی با سابقه طراحی و مهندسی نرم‌افزار.",
+    description: "مدیر ارشد محصول فنی با تمرکز بر محصولات هوش مصنوعی و سابقه طراحی و مهندسی نرم‌افزار.",
     images: [{ url: "/og.png", width: 1200, height: 630, alt: "درباره شاهین غنی‌زاده" }],
   },
 };

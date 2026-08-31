@@ -40,7 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
     return [pair.en, pair.fa].map(path => ({
       url: absoluteUrl(path),
-      lastModified: new Date("2026-08-12T00:00:00Z"),
+      lastModified: new Date("2026-08-31T00:00:00Z"),
       changeFrequency: pair.changeFrequency,
       priority: pair.priority,
       alternates: { languages },

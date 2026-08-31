@@ -30,8 +30,8 @@ export const personJsonLd = {
     absoluteUrl("/shahin-ghanizadeh-16x9.jpg"),
   ],
   description:
-    "Senior Technical Product Manager with 10 years across product, UX, and software engineering, leading digital products from problem definition through launch and operation.",
-  jobTitle: "Senior Technical Product Manager",
+    "Senior Technical Product Manager focused on AI products, with 10 years across product, UX, and software engineering, leading products from unclear problem through launch and operation.",
+  jobTitle: "Senior Technical Product Manager - AI Products",
   knowsAbout: [
     "Technical product management",
     "Product strategy",
@@ -40,6 +40,9 @@ export const personJsonLd = {
     "Frontend engineering",
     "Applied artificial intelligence",
     "Large language model products",
+    "Voice artificial intelligence",
+    "AI evaluation and guardrails",
+    "Compliance-constrained AI design",
     "Quality assurance",
   ],
   knowsLanguage: ["English", "Persian"],
@@ -67,13 +70,13 @@ export function profilePageJsonLd(locale: "en" | "fa") {
     name: locale === "fa" ? `درباره ${PERSON_NAME_FA}` : `About ${PERSON_NAME}`,
     description:
       locale === "fa"
-        ? `پروفایل حرفه‌ای ${PERSON_NAME_FA}، مدیر ارشد محصول فنی با سابقه طراحی و مهندسی نرم‌افزار.`
-        : `Professional profile of ${PERSON_NAME}, a Senior Technical Product Manager with a background in product design and software engineering.`,
+        ? `پروفایل حرفه‌ای ${PERSON_NAME_FA}، مدیر ارشد محصول فنی با تمرکز بر محصولات هوش مصنوعی.`
+        : `Professional profile of ${PERSON_NAME}, a Senior Technical Product Manager focused on AI products.`,
     inLanguage: locale,
     mainEntity: { "@id": PERSON_ID },
     isPartOf: { "@id": SITE_ID },
     dateCreated: "2026-07-31T00:00:00+03:30",
-    dateModified: "2026-08-13T00:00:00+03:30",
+    dateModified: "2026-08-31T00:00:00+03:30",
   };
 }
 

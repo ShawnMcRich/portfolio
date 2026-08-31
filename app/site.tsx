@@ -33,10 +33,10 @@ const copy = {
     language: "FA",
     languageHref: "/fa",
     resume: "Download résumé",
-    role: "Senior Technical Product Manager",
+    role: "Senior Technical Product Manager - AI Products",
     intro: "I lead technically complex products from an unclear problem to a working release.",
     subintro:
-      "My work covers product strategy, roadmaps, requirements, UX, technical delivery, QA, launch, and production improvement. A senior frontend and product-design background helps me make decisions that teams can actually implement.",
+      "I lead discovery, product direction, requirements, UX, technical delivery, QA, and launch. I ground decisions in user research, traceable requirements, decision logs, and measured outcomes; my engineering background keeps those decisions workable in practice.",
     availability: "Current product work",
     workCta: "View product case studies",
     contactCta: "Discuss a project",
@@ -106,9 +106,9 @@ const copy = {
     thinkingTitle: "Product notes",
     thinkingIntro:
       "Three notes based on work in Apex and Vibe.",
-    aboutTitle: "Senior Technical Product Manager with 10 years across product, UX, and software engineering.",
+    aboutTitle: "Senior Technical Product Manager focused on AI products, with 10 years across product, UX, and software engineering.",
     aboutBody: [
-      "I have taken AI, marketplace, real-estate, commerce, and internal-operations products from problem definition and roadmap through requirements, implementation, QA, launch, and production support.",
+      "I currently lead the product foundation for a compliance-first AI voice platform in the UAE and operate Apex, a live, monetized AI market-analysis product I built end to end.",
       "My engineering background lets me work directly with designers and engineers, surface constraints early, and stay close to delivery without reducing product management to ticket administration. I still contribute to UX and code when that involvement materially improves the product.",
     ],
     principles: "How I tend to work",
@@ -133,10 +133,10 @@ const copy = {
     language: "EN",
     languageHref: "/",
     resume: "دانلود رزومه",
-    role: "مدیر ارشد محصول فنی",
+    role: "مدیر ارشد محصول فنی | محصولات هوش مصنوعی",
     intro: "کار من این است که یک مسئله مبهم را روشن کنم، اولویت‌ها را مشخص کنم و محصول را تا نسخه قابل استفاده جلو ببرم.",
     subintro:
-      "از استراتژی و نقشه راه تا نیازمندی‌ها، UX، هماهنگی تیم فنی، QA، لانچ و بهبود نسخه فعال را دنبال می‌کنم. سابقه فرانت‌اند و طراحی محصول کمک می‌کند تصمیم‌هایم با واقعیت اجرا فاصله نداشته باشند.",
+      "از شناخت مسئله و جهت محصول تا نیازمندی‌ها، UX، هماهنگی اجرا، QA و لانچ را جلو می‌برم. تصمیم‌ها را به تحقیق کاربر، نیازمندی‌های قابل ردگیری و نتیجه‌های قابل‌اندازه‌گیری وصل می‌کنم و سابقه مهندسی کمک می‌کند این تصمیم‌ها در اجرا هم دوام بیاورند.",
     availability: "فعالیت فعلی",
     workCta: "مشاهده مطالعات موردی",
     contactCta: "گفت‌وگو در واتساپ",
@@ -206,9 +206,9 @@ const copy = {
     thinkingTitle: "یادداشت‌های محصول",
     thinkingIntro:
       "سه یادداشت بر اساس تجربه کار در Apex و Vibe.",
-    aboutTitle: "مدیر ارشد محصول فنی با ده سال سابقه در محصول، UX و مهندسی نرم‌افزار.",
+    aboutTitle: "مدیر ارشد محصول فنی با تمرکز بر محصولات هوش مصنوعی و ده سال سابقه در محصول، UX و مهندسی نرم‌افزار.",
     aboutBody: [
-      "در پروژه‌های هوش مصنوعی، مارکت‌پلیس، املاک، فروش آنلاین و ابزارهای داخلی، کار را از روشن کردن مسئله و چیدن نقشه راه تا تعریف نیازمندی، اجرا، QA، انتشار و پشتیبانی نسخه واقعی جلو برده‌ام.",
+      "اکنون پایه محصول یک پلتفرم Voice AI با الزامات قانونی در امارات را جلو می‌برم و هم‌زمان Apex، یک محصول تحلیل بازار فعال و درآمدزا را اداره می‌کنم که از ابتدا ساخته‌ام.",
       "سابقه فنی‌ام کمک می‌کند با طراح و برنامه‌نویس مستقیم و دقیق کار کنم، محدودیت‌ها را زودتر ببینم و تا رسیدن محصول به نسخه قابل استفاده کنار تیم بمانم. وقتی لازم باشد در UX یا کد هم نقش مستقیم می‌گیرم، اما مسئولیت اصلی‌ام تصمیم‌های محصول و پیش بردن تحویل است.",
     ],
     principles: "روش کاری من",
@@ -371,7 +371,7 @@ export function Header({ locale, languagePath }: { locale: Locale; languagePath?
 export function Footer({ locale }: { locale: Locale }) {
   return (
     <footer className="footer">
-      <div><strong>{locale === "fa" ? "شاهین غنی‌زاده" : "Shahin Ghanizadeh"}</strong><p>{locale === "fa" ? "مدیر ارشد محصول فنی با سابقه طراحی و مهندسی نرم‌افزار" : "Senior Technical Product Manager with a background in product design and software engineering"}</p></div>
+      <div><strong>{locale === "fa" ? "شاهین غنی‌زاده" : "Shahin Ghanizadeh"}</strong><p>{locale === "fa" ? "مدیر ارشد محصول فنی با تمرکز بر محصولات هوش مصنوعی" : "Senior Technical Product Manager focused on AI products"}</p></div>
       <div className="footer-links">
         <a href={whatsappHref(locale)} target="_blank" rel="noreferrer">WhatsApp</a>
         <a href="mailto:shahinghani@hotmail.com">Email</a>
@@ -449,8 +449,8 @@ export function HomePage({ locale }: { locale: Locale }) {
         <aside className="hero-note">
           <div className="availability"><span />{c.availability}</div>
           <p>{rtl
-            ? "در حال حاضر Apex را اداره می‌کنم و همراه تیم Vibe روی آماده‌سازی نسخه عمومی کار می‌کنم."
-            : "I currently operate Apex and work with the Vibe team on its public-launch readiness."}</p>
+            ? "در حال حاضر پایه محصول یک پلتفرم Voice AI در امارات را جلو می‌برم و هم‌زمان Apex را اداره می‌کنم."
+            : "I currently lead the product foundation for a compliance-first AI voice platform in the UAE and operate Apex."}</p>
         </aside>
       </section>
 
@@ -480,7 +480,7 @@ export function HomePage({ locale }: { locale: Locale }) {
 
       <section className="content-section home-experience">
         <header className="section-heading"><div><p className="kicker">{c.path}</p><h2>{c.pathIntro}</h2></div><Link className="text-link" href={href(locale, "about#experience")}>{c.fullHistory}<Arrow locale={locale} /></Link></header>
-        <div className="timeline compact-timeline">{experience.slice(0, 4).map(item => <article key={item.company}><time>{local(item.period, locale)}</time><div><h3>{local(item.title, locale)}</h3><strong>{item.company}</strong><p>{local(item.summary, locale)}</p></div></article>)}</div>
+        <div className="timeline compact-timeline">{experience.slice(0, 4).map(item => <article key={local(item.company, locale)}><time>{local(item.period, locale)}</time><div><h3>{local(item.title, locale)}</h3><strong>{local(item.company, locale)}</strong><p>{local(item.summary, locale)}</p></div></article>)}</div>
       </section>
 
       <section className="notes-band">
@@ -704,7 +704,7 @@ export function ThoughtPage({ locale, slug }: { locale: Locale; slug: NoteSlug }
           <div>
             <p className="kicker">{rtl ? "نویسنده" : "Author"}</p>
             <strong>{rtl ? "شاهین غنی‌زاده" : "Shahin Ghanizadeh"}</strong>
-            <p>{rtl ? "مدیر ارشد محصول فنی با سابقه طراحی و مهندسی نرم‌افزار" : "Senior Technical Product Manager with a background in product design and software engineering"}</p>
+            <p>{rtl ? "مدیر ارشد محصول فنی با تمرکز بر محصولات هوش مصنوعی" : "Senior Technical Product Manager focused on AI products"}</p>
             <Link className="text-link" href={href(locale, "about")}>{rtl ? "درباره من" : "About Shahin"}<Arrow locale={locale} /></Link>
           </div>
           <Link className="thought-project" href={href(locale, `work/${note.project}`)}>
@@ -728,7 +728,7 @@ export function AboutPage({ locale }: { locale: Locale }) {
       <Header locale={locale} />
       <section className="about-hero"><header className="about-heading"><img className="about-portrait" src="/shahin-ghanizadeh.jpg" width="1200" height="1200" alt={rtl ? "شاهین غنی‌زاده" : "Shahin Ghanizadeh"} /><p className="kicker">{rtl ? "درباره من" : "About"}</p><h1>{rtl ? "شاهین غنی‌زاده" : "Shahin Ghanizadeh"}</h1><p>{c.aboutTitle}</p></header><div>{c.aboutBody.map(paragraph => <p key={paragraph}>{paragraph}</p>)}</div></section>
       <section className="principles-band"><header><p className="kicker">{c.principles}</p></header><div>{c.principleItems.map(([title, body], index) => <article key={title}><span>0{index + 1}</span><h2>{title}</h2><p>{body}</p></article>)}</div></section>
-      <section id="experience" className="content-section full-experience"><header className="section-heading"><div><p className="kicker">{c.path}</p><h2>{c.pathIntro}</h2></div></header><div className="timeline">{experience.map(item => <article key={item.company}><time>{local(item.period, locale)}</time><div><h3>{local(item.title, locale)}</h3><strong>{item.company}</strong><p>{local(item.summary, locale)}</p></div></article>)}</div></section>
+      <section id="experience" className="content-section full-experience"><header className="section-heading"><div><p className="kicker">{c.path}</p><h2>{c.pathIntro}</h2></div></header><div className="timeline">{experience.map(item => <article key={local(item.company, locale)}><time>{local(item.period, locale)}</time><div><h3>{local(item.title, locale)}</h3><strong>{local(item.company, locale)}</strong><p>{local(item.summary, locale)}</p></div></article>)}</div></section>
       <section className="education-band"><p className="kicker">{c.education}</p><p>{c.educationBody}</p><a className="button button-dark" href={resumeHref(locale)}><Download size={18} />{c.resume}</a></section>
       <Contact locale={locale} />
       <Footer locale={locale} />

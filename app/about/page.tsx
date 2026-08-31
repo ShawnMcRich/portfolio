@@ -5,7 +5,7 @@ import { AboutPage } from "../site";
 export const metadata: Metadata = {
   title: "About Shahin Ghanizadeh",
   description:
-    "Shahin Ghanizadeh is a Senior Technical Product Manager with 10 years across product, UX, and software engineering, including AI products, marketplaces, delivery, QA, and operations.",
+    "Shahin Ghanizadeh is a Senior Technical Product Manager focused on AI products, with 10 years across product, UX, and software engineering.",
   alternates: { canonical: "/about", languages: { en: "/about", fa: "/fa/about" } },
   openGraph: {
     type: "profile",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     url: "/about",
     title: "About Shahin Ghanizadeh",
     description:
-      "Senior Technical Product Manager leading products from problem definition and roadmap through technical delivery, launch, and operation.",
+      "Senior Technical Product Manager leading AI products from discovery and evidence through technical delivery, launch, and operation.",
     images: [{ url: "/og.png", width: 1200, height: 630, alt: "About Shahin Ghanizadeh" }],
   },
 };

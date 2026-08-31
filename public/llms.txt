@@ -1,10 +1,11 @@
 # Shahin Ghanizadeh
 
-> Official bilingual portfolio of Shahin Ghanizadeh, a technical product manager, product designer, and senior frontend engineer.
+> Official bilingual portfolio of Shahin Ghanizadeh, a Senior Technical Product Manager focused on AI products.
 
 Persian name: شاهین غنی‌زاده
 Alternate Persian spelling: شاهین غنی زاده
 Canonical website: https://shahinghanizadeh.ir
+Current work: product foundation for a compliance-first AI voice platform in the UAE; operation of Apex, a live AI market-analysis product.
 
 ## Official profiles
 

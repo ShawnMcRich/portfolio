@@ -20,6 +20,8 @@ test("server-renders the English portfolio", async () => {
   const html = await response.text();
   assert.match(html, /Shahin Ghanizadeh/);
   assert.match(html, /Technical Product Manager/);
+  assert.match(html, /UAE Proptech Venture/);
+  assert.match(html, /AI Products/);
   assert.match(html, /View product case studies/);
   assert.match(html, /Apex/);
   assert.match(html, /Vibe/);
@@ -41,6 +43,7 @@ test("server-renders the Persian portfolio", async () => {
   const html = await response.text();
   assert.match(html, /شاهین/);
   assert.match(html, /مدیر ارشد محصول فنی/);
+  assert.match(html, /پروژه فناوری املاک در امارات/);
   assert.match(html, /پروژه‌های منتخب/);
   assert.match(html, /انتخاب اول/);
   assert.match(html, /حسین‌طلب/);
@@ -109,7 +112,7 @@ test("about page declares Shahin as the profile page subject", async () => {
   assert.match(html, /ProfilePage/);
   assert.match(html, /profile-page-structured-data/);
   assert.match(html, /dateCreated\\?\":\\?\"2026-07-31T00:00:00\+03:30/);
-  assert.match(html, /dateModified\\?\":\\?\"2026-08-13T00:00:00\+03:30/);
+  assert.match(html, /dateModified\\?\":\\?\"2026-08-31T00:00:00\+03:30/);
 });
 
 test("static deployment includes crawler-facing SEO files", async () => {
